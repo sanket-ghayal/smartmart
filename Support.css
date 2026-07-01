@@ -1,19 +1,452 @@
-.contact{
-    display: inline-block;
-    height: 64vw;
-    width: 85vw;
-    border: solid black;
-    border-radius: 10px;
-    position: relative;
-    left: 7vw;
-    top: 3vw;
-}
-.contain{
-    display: inline-block;
-    position: relative;
-    left: 1vw;
-}
-a{
- text-decoration: none;
+/*====================================
+        GOOGLE FONT
+====================================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    overflow-x:hidden;
+}
+
+/*====================================
+            NAVBAR
+====================================*/
+
+.navbar{
+    background:#111827 !important;
+}
+
+.navbar-brand{
+    color:#fbbf24 !important;
+}
+
+.navbar-nav .nav-link{
+    color:#fff !important;
+    margin:0 10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#fbbf24 !important;
+}
+
+.navbar-nav .nav-link.active{
+    color:#fbbf24 !important;
+    border-bottom:3px solid #fbbf24;
+}
+
+.form-control{
+    border-radius:8px;
+}
+
+.btn-warning{
+    font-weight:600;
+}
+/*====================================
+            HERO
+====================================*/
+
+.support-hero{
+    background:linear-gradient(135deg,#0d6efd,#001d3d);
+    color:#fff;
+    padding:100px 0;
+    text-align:center;
+}
+
+.support-hero h1{
+    font-size:55px;
+    font-weight:700;
+}
+
+.support-hero p{
+    font-size:20px;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.support-hero .btn{
+    margin-top:25px;
+    padding:12px 35px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.support-hero .btn:hover{
+    transform:translateY(-4px);
+}
+
+/*====================================
+        SUPPORT CARDS
+====================================*/
+
+.support-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    transition:.4s;
+    height:100%;
+}
+
+.support-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12)!important;
+}
+
+.support-card h1{
+    font-size:55px;
+}
+
+.support-card h5{
+    margin-top:20px;
+    font-weight:700;
+}
+
+.support-card p{
+    color:#666;
+    margin-top:10px;
+}
+/*====================================
+            FAQ SECTION
+====================================*/
+
+.accordion-item{
+    border:none;
+    border-radius:15px!important;
+    overflow:hidden;
+    margin-bottom:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.accordion-button{
+    font-weight:600;
+    padding:18px 22px;
+    background:#fff;
+    color:#222;
+}
+
+.accordion-button:not(.collapsed){
+    background:#0d6efd;
+    color:#fff;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+.accordion-body{
+    padding:20px;
+    color:#555;
+    line-height:1.8;
+}
+
+/*====================================
+      RETURN & WARRANTY
+====================================*/
+
+.card{
+    border:none;
+    border-radius:20px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12)!important;
+}
+
+.card h3{
+    font-weight:700;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.7;
+}
+
+/*====================================
+      SECTION SPACING
+====================================*/
+
+section{
+    padding:70px 0;
+}
+
+/*====================================
+        BUTTON EFFECTS
+====================================*/
+
+.btn-warning{
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(255,193,7,.35);
+}
+
+/*====================================
+        SHADOW EFFECT
+====================================*/
+
+.shadow{
+    transition:.35s;
+}
+
+.shadow:hover{
+    box-shadow:0 20px 40px rgba(0,0,0,.15)!important;
+}
+/*====================================
+      CONTACT SUPPORT SECTION
+====================================*/
+
+.bg-primary{
+    background:linear-gradient(135deg,#0d6efd,#001d3d)!important;
+}
+
+.bg-primary h2{
+    font-weight:700;
+    color:#fff;
+}
+
+.bg-primary p{
+    color:#f8f9fa;
+}
+
+.bg-primary h1{
+    font-size:55px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.bg-primary .col-md-4:hover h1{
+    transform:scale(1.15);
+}
+
+/*====================================
+    CUSTOMER SATISFACTION
+====================================*/
+
+.shadow.rounded{
+    background:#fff;
+    border-radius:20px!important;
+    transition:.4s;
+    padding:30px;
+}
+
+.shadow.rounded:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15)!important;
+}
+
+.shadow.rounded h1{
+    font-size:55px;
+}
+
+.shadow.rounded h4{
+    margin:18px 0 10px;
+    font-weight:700;
+}
+
+.shadow.rounded p{
+    color:#666;
+}
+
+/*====================================
+            FOOTER
+====================================*/
+
+footer{
+    background:#111;
+    color:#fff;
+    padding-top:60px;
+}
+
+footer h3,
+footer h5{
+    color:#ffc107;
+    font-weight:700;
+}
+
+footer p,
+footer li{
+    color:#d6d6d6;
+    line-height:1.8;
+}
+
+footer ul{
+    list-style:none;
+    padding:0;
+}
+
+footer ul li{
+    margin-bottom:10px;
+}
+
+footer ul li a{
+    color:#d6d6d6;
+    text-decoration:none;
+    transition:.3s;
+}
+
+footer ul li a:hover{
+    color:#ffc107;
+    padding-left:6px;
+}
+
+footer hr{
+    border-color:rgba(255,255,255,.15);
+}
+
+/*====================================
+        BACK TO TOP
+====================================*/
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    display:none;
+    z-index:999;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+#topBtn:hover{
+    transform:translateY(-5px) scale(1.1);
+}
+
+/*====================================
+        SCROLLBAR
+====================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#084298;
+}
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+.support-hero{
+    padding:80px 0;
+}
+
+.support-hero h1{
+    font-size:42px;
+}
+
+.support-card{
+    margin-bottom:20px;
+}
+
+}
+
+@media(max-width:768px){
+
+.support-hero{
+    padding:60px 0;
+}
+
+.support-hero h1{
+    font-size:34px;
+}
+
+.support-hero p{
+    font-size:17px;
+}
+
+footer{
+    text-align:center;
+}
+
+footer .col-lg-4,
+footer .col-lg-3,
+footer .col-lg-2{
+    margin-bottom:30px;
+}
+
+}
+
+@media(max-width:576px){
+
+.support-hero h1{
+    font-size:28px;
+}
+
+.support-hero p{
+    font-size:15px;
+}
+
+.navbar-brand{
+    font-size:24px;
+}
+
+.btn-lg{
+    width:100%;
+}
+
+.shadow.rounded{
+    margin-bottom:20px;
+}
+
+}
+
+/*====================================
+        REMOVE EXTRA SPACE
+====================================*/
+
+html,
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background:#f8f9fa;
+}
+
+footer{
+    margin-bottom:0;
+}
+
+section:last-of-type{
+    margin-bottom:0;
 }
