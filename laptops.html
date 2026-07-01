@@ -2,610 +2,958 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laptops</title>
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="laptop-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops | SmartzMart</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="laptop-style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar bg-dark border-bottom navbar-expand-md border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">SmartzMart</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold fs-2 text-warning" href="index.html">
+            📱 SmartzMart
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mobiles.html">Mobiles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Tvs.html">Tvs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="laptops.html">Laptops</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Contact.html">Contact us</a></li>
-                <li><a class="dropdown-item" href="Support.html">Supports</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Menu -->
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="mobiles.html">Mobiles</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="laptops.html">Laptops</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Tvs.html">Smart TVs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Support.html">Support</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Search -->
+            <form class="d-flex">
+                <input class="form-control me-2"
+                    type="search"
+                    placeholder="Search Products">
+
+                <button class="btn btn-warning">
+                    Search
+                </button>
+            </form>
+
         </div>
-      </div>
+    </div>
+</nav>
+<!-- ================= HERO ================= -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span class="badge bg-warning text-dark px-3 py-2 mb-3">
+                    NEW ARRIVALS 2026
+                </span>
+
+                <h1 class="display-3 fw-bold mb-4">
+
+                    Power Your Productivity
+
+                </h1>
+
+                <p class="lead">
+
+                    Discover premium laptops for gaming, business,
+                    programming, design and everyday work.
+                    Explore the latest Intel Core Ultra, AMD Ryzen AI,
+                    NVIDIA RTX and Apple Silicon laptops.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#products" class="btn btn-warning btn-lg me-3">
+
+                        Explore Now
+
+                    </a>
+
+                    <a href="#categories" class="btn btn-outline-light btn-lg">
+
+                        Shop Categories
+
+                    </a>
+
+                </div>
+
+                <div class="row mt-5">
+
+                    <div class="col-4">
+
+                        <h3 class="fw-bold text-warning">
+
+                            500+
+
+                        </h3>
+
+                        <small>Models</small>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <h3 class="fw-bold text-warning">
+
+                            50+
+
+                        </h3>
+
+                        <small>Brands</small>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <h3 class="fw-bold text-warning">
+
+                            24/7
+
+                        </h3>
+
+                        <small>Support</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img src="Images/laptop-hero.png"
+                     class="img-fluid hero-image"
+                     alt="Laptop Hero">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FILTER SECTION ================= -->
+
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Browse Laptops</h2>
+        <p class="text-muted">
+            Find the perfect laptop based on Brand, Processor, RAM and Budget.
+        </p>
+    </div>
+
+    <div class="row g-3">
+
+        <div class="col-lg-3 col-md-6">
+            <select class="form-select">
+                <option selected>Choose Brand</option>
+                <option>HP</option>
+                <option>ASUS</option>
+                <option>Dell</option>
+                <option>Lenovo</option>
+                <option>Acer</option>
+                <option>MSI</option>
+            </select>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <select class="form-select">
+                <option selected>Processor</option>
+                <option>Intel Core i3</option>
+                <option>Intel Core i5</option>
+                <option>Intel Core i7</option>
+                <option>AMD Ryzen 5</option>
+                <option>AMD Ryzen 7</option>
+            </select>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <select class="form-select">
+                <option selected>RAM</option>
+                <option>8 GB</option>
+                <option>16 GB</option>
+                <option>32 GB</option>
+            </select>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <button class="btn btn-warning w-100">
+                Apply Filter
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SHOP BY CATEGORY ================= -->
+
+<section class="container pb-5">
+
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Shop by Category</h2>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+            <div class="category-card text-center p-4 shadow rounded">
+                <img src="Images/gaming-laptop.png"
+                     class="img-fluid mb-3"
+                     style="height:90px;">
+                <h5>Gaming</h5>
+                <p class="text-muted">
+                    RTX Graphics & High Performance
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="category-card text-center p-4 shadow rounded">
+                <img src="Images/student-laptop.png"
+                     class="img-fluid mb-3"
+                     style="height:90px;">
+                <h5>Student</h5>
+                <p class="text-muted">
+                    Affordable & Lightweight
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="category-card text-center p-4 shadow rounded">
+                <img src="Images/business-laptop.png"
+                     class="img-fluid mb-3"
+                     style="height:90px;">
+                <h5>Business</h5>
+                <p class="text-muted">
+                    Productivity & Office Work
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="category-card text-center p-4 shadow rounded">
+                <img src="Images/creator-laptop.png"
+                     class="img-fluid mb-3"
+                     style="height:90px;">
+                <h5>Creator</h5>
+                <p class="text-muted">
+                    Video Editing & Designing
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= LAPTOP PRODUCTS START NEXT ================= -->
+<section class="container pb-5">
+<div class="row g-4">
+<!-- Product 1 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <span class="badge bg-danger position-absolute m-3">
+            15% OFF
+        </span>
+
+        <img src="Images/Hp.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                HP Pavilion i7
+            </h5>
+
+            <p class="text-muted">
+                Intel Core i7 • 16GB • 512GB SSD
+            </p>
+
+            <h4 class="text-success">
+                ₹72,990
+            </h4>
+
+            <small class="text-decoration-line-through">
+                ₹84,990
+            </small>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/hp-pavilion-plus-creator-oled-eyesafe-h-series-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-14-eh0024tu-thin-light-laptop/p/itm4aaa3f48f218c?pid=COMGHMH6GYGRH5BU&q=HP+Pavilion+i7+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=e3721866-f6e1-44a4-8448-a29fc9366758.COMGHMH6GYGRH5BU.SEARCH&ppt=sp&ppn=sp&ssid=3c0q4uk1qk73b2f41782838987883&qH=2a3af48be720322a&ov_redirect=true&lid=LSTCOMGHMH6GYGRH5BUOAGBSM&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 2 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <span class="badge bg-success position-absolute m-3">
+            NEW
+        </span>
+
+        <img src="Images/asus.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                ASUS ROG
+            </h5>
+
+            <p class="text-muted">
+                Ryzen 9 • RTX 4060 • 16GB
+            </p>
+
+            <h4 class="text-success">
+                ₹1,29,990
+            </h4>
+
+            <small class="text-decoration-line-through">
+                ₹1,39,990
+            </small>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/asus-rog-strix-g16-2026-amd-ryzen-9-16-core-8940hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-5050-165-hz-g614ph-rv073ws-gaming-laptop/p/itm79a5501cd2465?pid=COMHMARKFTZY9ZHE&lid=LSTCOMHMARKFTZY9ZHEVOW8OP&marketplace=FLIPKART&q=SUS+ROG+&store=4rr/tz1&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=58a44815-cdda-4b15-822e-dc8a8febd977.COMHMARKFTZY9ZHE.SEARCH&ppt=sp&ppn=sp&ssid=jcob9eyjn2l18hkw1782839030965&qH=c1962724498aae9f&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 3 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <span class="badge bg-primary position-absolute m-3">
+            HOT
+        </span>
+
+        <img src="Images/acer.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                Acer Aspire 7
+            </h5>
+
+            <p class="text-muted">
+                Intel i5 • 16GB • RTX 3050
+            </p>
+
+            <h4 class="text-success">
+                ₹69,990
+            </h4>
+
+            <small class="text-decoration-line-through">
+                ₹76,990
+            </small>
+
+            <div class="text-warning my-2">
+                ★★★★☆
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/acer-aspire-7-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-a715-79g-gaming-laptop/p/itm8875899548153?pid=COMHEYV9HG3USKPH&lid=LSTCOMHEYV9HG3USKPH3TQAHT&marketplace=FLIPKART&q=Acer+Aspire+7+&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=6f993aec-c1d9-4682-9f02-cf6ef8bf45ee.COMHEYV9HG3USKPH.SEARCH&ppt=sp&ppn=sp&ssid=e16ttlu4qck5xf5s1782839079042&qH=0b81e6c2b9516b15&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 4 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <span class="badge bg-warning text-dark position-absolute m-3">
+            BEST
+        </span>
+
+        <img src="Images/infinix.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                Infinix GT Book
+            </h5>
+
+            <p class="text-muted">
+                Intel i5 • 16GB • 512GB SSD
+            </p>
+
+            <h4 class="text-success">
+                ₹59,990
+            </h4>
+
+            <small class="text-decoration-line-through">
+                ₹66,990
+            </small>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44JRG3NJ2V&lid=LSTCOMHYS44JRG3NJ2VXWCETL&marketplace=FLIPKART&q=Infinix+GT+Book+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=423e84f7-22a8-410d-84d6-424b3ff58696.COMHYS44JRG3NJ2V.SEARCH&ppt=sp&ppn=sp&ssid=vhicp5wtqwi2gg741782839116609&qH=004f7a024cda67ea&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<!-- Product 5 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <img src="Images/dell.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                Dell Inspiron 15
+            </h5>
+
+            <p class="text-muted">
+                Intel Core i5 • 16GB • 512GB SSD
+            </p>
+
+            <h4 class="text-success">
+                ₹64,990
+            </h4>
+
+            <div class="text-warning my-2">
+                ★★★★☆
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/dell-inspiron-15-3520-backlit-keyboard-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-laptop/p/itm0c93229d052fe?pid=COMGTEGW6HF5GJGQ&lid=LSTCOMGTEGW6HF5GJGQT5MCQF&marketplace=FLIPKART&q=Dell+Inspiron+15&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=90b1c546-c106-4afb-a36f-7614ae12de4e.COMGTEGW6HF5GJGQ.SEARCH&ppt=sp&ppn=sp&ssid=3uml73x4uta6regw1782838717856&qH=c1652a3b6818421d&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 6 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <img src="Images/lenovo.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                Lenovo IdeaPad Slim 5
+            </h5>
+
+            <p class="text-muted">
+                Ryzen 7 • 16GB • 512GB SSD
+            </p>
+
+            <h4 class="text-success">
+                ₹67,999
+            </h4>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/lenovo-ideapad-slim-5-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-16iah8-laptop/p/itma68dba42368d2?pid=COMGTYDGGUKCDA8D&lid=LSTCOMGTYDGGUKCDA8DRVP3PP&marketplace=FLIPKART&q=Lenovo+IdeaPad+Slim+5&store=6bo/b5g&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=cd834f9d-ba21-4a59-a345-d3dd4875d79a.COMGTYDGGUKCDA8D.SEARCH&ppt=sp&ppn=sp&ssid=g1ongw3oe8o8lwjk1782838672740&qH=b083d83cb3946db3&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 7 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <img src="Images/msi.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                MSI Thin 15
+            </h5>
+
+            <p class="text-muted">
+                Intel i7 • RTX 4050 • 16GB
+            </p>
+
+            <h4 class="text-success">
+                ₹89,990
+            </h4>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/msi-thin-15-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-45-w-b13ve-gaming-laptop/p/itm8084b0b7961d4?pid=COMHCQ4TFPZPJKMY&lid=LSTCOMHCQ4TFPZPJKMYC4TKBI&marketplace=FLIPKART&q=MSI+Thin+15+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6abcb1d3-d01a-417a-bfb6-e10c7890b8d8.COMHCQ4TFPZPJKMY.SEARCH&ppt=sp&ppn=sp&ssid=n8b5nqww1e4cnjsw1782838627589&qH=1d96199ab3aca28f&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Product 8 -->
+
+<div class="col-lg-3 col-md-6">
+    <div class="card product-card h-100 shadow">
+
+        <img src="Images/apple-macbook.webp"
+             class="card-img-top p-4"
+             style="height:220px;object-fit:contain;">
+
+        <div class="card-body text-center">
+
+            <h5 class="fw-bold">
+                Apple MacBook Air M3
+            </h5>
+
+            <p class="text-muted">
+                Apple M3 • 16GB • 512GB SSD
+            </p>
+
+            <h4 class="text-success">
+                ₹1,14,900
+            </h4>
+
+            <div class="text-warning my-2">
+                ★★★★★
+            </div>
+
+            <a href="https://dl.flipkart.com/dl/apple-macbook-air-m3-8-gb-256-gb-ssd-macos-sonoma-mrxt3hn-a/p/itm2ea42dec44bca?pid=COMGYP5GGSNGYSZP&lid=LSTCOMGYP5GGSNGYSZPBWPP4V&marketplace=FLIPKART&q=Apple+MacBook+Air+M3&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=fc8cbb26-8be6-41a4-b0ec-402a1f4ed0b8.COMGYP5GGSNGYSZP.SEARCH&ppt=sp&ppn=sp&ssid=qirvhtuwpkbx57281782838534908&qH=ec7ca751cbc5a493&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
+                Buy Now
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+</section>
+<!-- ================= PAGINATION ================= -->
+
+<section class="container py-4">
+
+    <nav>
+
+        <ul class="pagination justify-content-center">
+
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+
+        </ul>
+
     </nav>
-  </header>
-  <main>
-  <div class="image-1">
-    <img src="Images/flipcart.webp" alt="">
-    <img src="Images/flipcart.webp" alt="">
 
-  </div>
+</section>
 
+<!-- ================= WHY CHOOSE SMARTZMART ================= -->
 
+<section class="container py-5">
 
+    <div class="text-center mb-5">
 
+        <h2 class="fw-bold">Why Choose SmartzMart?</h2>
 
-    <div class="hp">
-      <div class="heading">
-        <h1>Best deals on HP Laptops</h1>
-      </div>
-      <div class="cards">
-        <div class="card1">
-          <a href="https://www.flipkart.com/hp-victus-intel-core-i5-13th-gen-13420h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-144-hz-15-fa2703tx-gaming-laptop/p/itm280d703c08614?pid=COMH8VXV7FW2SDAX&lid=LSTCOMH8VXV7FW2SDAXP1L8IA&marketplace=FLIPKART&q=HP+Victus+Intel+Core+i5&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=2b6274cd-ca8b-421b-bb3d-e0f6b6c1afae.COMH8VXV7FW2SDAX.SEARCH&ppt=sp&ppn=sp&ssid=ogcltmg7xc0000001753207341523&qH=a76ecab1c2b5e9bd"
-            target="_blank"><img src="Images/Hp-1.webp" class="card-img-top "></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-victus-intel-core-i5-13th-gen-13420h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-144-hz-15-fa2703tx-gaming-laptop/p/itm280d703c08614?pid=COMH8VXV7FW2SDAX&lid=LSTCOMH8VXV7FW2SDAXP1L8IA&marketplace=FLIPKART&q=HP+Victus+Intel+Core+i5&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=2b6274cd-ca8b-421b-bb3d-e0f6b6c1afae.COMH8VXV7FW2SDAX.SEARCH&ppt=sp&ppn=sp&ssid=ogcltmg7xc0000001753207341523&qH=a76ecab1c2b5e9bd"
-                target="_blank">HP Victus Intel<br><b>₹54,990..</b></h5>
-            <p class="card-text">15.6 inch FHD (1920 x 1080), 144 Hz, IPS, micro-edge, anti-glare, 300 nits, 62.5% sRGB
-              Light Laptop without Optical Disk Drive
-              Preloaded with MS Office</p></a>
-          </div>
-          <a href="https://www.flipkart.com/hp-victus-intel-core-i5-13th-gen-13420h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-2050-144-hz-15-fa2703tx-gaming-laptop/p/itm280d703c08614?pid=COMH8VXV7FW2SDAX&lid=LSTCOMH8VXV7FW2SDAXP1L8IA&marketplace=FLIPKART&q=HP+Victus+Intel+Core+i5&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=2b6274cd-ca8b-421b-bb3d-e0f6b6c1afae.COMH8VXV7FW2SDAX.SEARCH&ppt=sp&ppn=sp&ssid=ogcltmg7xc0000001753207341523&qH=a76ecab1c2b5e9bd"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
+        <p class="text-muted">
+            Trusted by thousands of happy customers.
+        </p>
 
-        <div class="card2">
-          <a href="https://www.flipkart.com/hp-omen-amd-ryzen-7-octa-core-7840hs-16-gb-1-tb-ssd-windows-11-home-6-gb-graphics-nvidia-geforce-rtx-4050-165-hz-16-xd0015ax-gaming-laptop/p/itmabad31c69922e?pid=COMH28U4QR7GUZHM&lid=LSTCOMH28U4QR7GUZHMKTPBNH&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMH28U4QR7GUZHM.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"><img src="Images/Hp-2.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-omen-amd-ryzen-7-octa-core-7840hs-16-gb-1-tb-ssd-windows-11-home-6-gb-graphics-nvidia-geforce-rtx-4050-165-hz-16-xd0015ax-gaming-laptop/p/itmabad31c69922e?pid=COMH28U4QR7GUZHM&lid=LSTCOMH28U4QR7GUZHMKTPBNH&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMH28U4QR7GUZHM.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-                target="_blank">HP Omen AMD Ryzen <br><b>₹94,900..</b></h5>
-            <p class="card-text">
-              16.1 Inch Full HD, 165 Hz, 7 ms response time, IPS, micro-edge, anti-glare, Low Blue Light, 300 nits, 100%
-              sRGB
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href=https://www.flipkart.com/hp-omen-amd-ryzen-7-octa-core-7840hs-16-gb-1-tb-ssd-windows-11-home-6-gb-graphics-nvidia-geforce-rtx-4050-165-hz-16-xd0015ax-gaming-laptop/p/itmabad31c69922e?pid=COMH28U4QR7GUZHM&lid=LSTCOMH28U4QR7GUZHMKTPBNH&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMH28U4QR7GUZHM.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-
-        <div class="card3">
-          <a href="https://www.flipkart.com/hp-pavilion-mso-2021-amd-ryzen-5-hexa-core-8540u-16-gb-512-gb-ssd-windows-11-home-16-ag0019au-thin-light-laptop/p/itmd14c7a58f1b78?pid=COMHAZY5ZQZQQDKZ&lid=LSTCOMHAZY5ZQZQQDKZ7RBKNI&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHAZY5ZQZQQDKZ.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"><img src="Images/Hp-3.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-pavilion-mso-2021-amd-ryzen-5-hexa-core-8540u-16-gb-512-gb-ssd-windows-11-home-16-ag0019au-thin-light-laptop/p/itmd14c7a58f1b78?pid=COMHAZY5ZQZQQDKZ&lid=LSTCOMHAZY5ZQZQQDKZ7RBKNI&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHAZY5ZQZQQDKZ.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-                target="_blank">HP Pavilion MSO <br><b>₹58,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              16 Inch WUXGA, IPS, micro-edge, anti-glare, 300 nits, 62.5% sRGB
-              Light Laptop without Optical Disk Drive
-            </p></a>
-          </div>
-          <a href="https://www.flipkart.com/hp-pavilion-mso-2021-amd-ryzen-5-hexa-core-8540u-16-gb-512-gb-ssd-windows-11-home-16-ag0019au-thin-light-laptop/p/itmd14c7a58f1b78?pid=COMHAZY5ZQZQQDKZ&lid=LSTCOMHAZY5ZQZQQDKZ7RBKNI&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHAZY5ZQZQQDKZ.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
-
-      <div class="cards1">
-        <div class="card5">
-          <a href="https://www.flipkart.com/hp-amd-ryzen-5-quad-core-7520u-16-gb-512-gb-ssd-windows-11-home-15-fc0156au-thin-light-laptop/p/itma0fa438e7d192?pid=COMH4N76ZS7U93JE&lid=LSTCOMH4N76ZS7U93JEON3TMR&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_15&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMH4N76ZS7U93JE.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"><img src="Images/Hp-4.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-amd-ryzen-5-quad-core-7520u-16-gb-512-gb-ssd-windows-11-home-15-fc0156au-thin-light-laptop/p/itma0fa438e7d192?pid=COMH4N76ZS7U93JE&lid=LSTCOMH4N76ZS7U93JEON3TMR&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_15&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMH4N76ZS7U93JE.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-                target="_blank">HP AMD Ryzen <br><b>₹42,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 Inch Full HD, micro-edge, anti-glare, 250 nits, 45% NTSC
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/hp-pavilion-mso-2021-amd-ryzen-5-hexa-core-8540u-16-gb-512-gb-ssd-windows-11-home-16-ag0019au-thin-light-laptop/p/itmd14c7a58f1b78?pid=COMHAZY5ZQZQQDKZ&lid=LSTCOMHAZY5ZQZQQDKZ7RBKNI&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHAZY5ZQZQQDKZ.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-        <div class="card6">
-          <a href="https://www.flipkart.com/hp-15s-backlit-keyboard-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-15-fc0026au-thin-light-laptop/p/itm4e6d85f618393?pid=COMGZNSBMUR7S8WY&lid=LSTCOMGZNSBMUR7S8WYKIAFC9&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_21&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMGZNSBMUR7S8WY.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"><img src="Images/Hp-5.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-15s-backlit-keyboard-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-15-fc0026au-thin-light-laptop/p/itm4e6d85f618393?pid=COMGZNSBMUR7S8WY&lid=LSTCOMGZNSBMUR7S8WYKIAFC9&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_21&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMGZNSBMUR7S8WY.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-                target="_blank">HP 15s Backlit<br><b>₹30,650..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 Inch FHD, micro-edge, anti-glare, Brightness: 250 nits, Color Gamut: 45%NTSC
-              Light Laptop</p></a>
-          </div>
-          <a href="https://www.flipkart.com/hp-pavilion-mso-2021-amd-ryzen-5-hexa-core-8540u-16-gb-512-gb-ssd-windows-11-home-16-ag0019au-thin-light-laptop/p/itmd14c7a58f1b78?pid=COMHAZY5ZQZQQDKZ&lid=LSTCOMHAZY5ZQZQQDKZ7RBKNI&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHAZY5ZQZQQDKZ.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-        <div class="card6">
-          <a href="https://www.flipkart.com/hp-amd-ryzen-7-octa-core-5825u-16-gb-512-gb-ssd-windows-11-home-15-fc0476au-thin-light-laptop/p/itmfb0bb6960fa93?pid=COMHCY2NKZPHHGHT&lid=LSTCOMHCY2NKZPHHGHTYJMO6Y&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_22&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHCY2NKZPHHGHT.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"><img src="Images/Hp-6.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-amd-ryzen-7-octa-core-5825u-16-gb-512-gb-ssd-windows-11-home-15-fc0476au-thin-light-laptop/p/itmfb0bb6960fa93?pid=COMHCY2NKZPHHGHT&lid=LSTCOMHCY2NKZPHHGHTYJMO6Y&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_22&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHCY2NKZPHHGHT.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-                target="_blank">HP AMD Ryzen <br><b>₹48,490..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 Inch FHD (1920 x 1080), micro-edge, anti-glare, 250 nits, 45%, NTSC
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/hp-amd-ryzen-7-octa-core-5825u-16-gb-512-gb-ssd-windows-11-home-15-fc0476au-thin-light-laptop/p/itmfb0bb6960fa93?pid=COMHCY2NKZPHHGHT&lid=LSTCOMHCY2NKZPHHGHTYJMO6Y&marketplace=FLIPKART&q=HP+laptops&store=6bo%2Fb5g&srno=s_1_22&otracker=search&otracker1=search&fm=Search&iid=9e4c783d-af50-4ab5-b3dc-41d33bb06382.COMHCY2NKZPHHGHT.SEARCH&ppt=sp&ppn=sp&ssid=yn2rgyv5xc0000001753207777091&qH=fc9567c66a69361e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
     </div>
 
+    <div class="row g-4">
 
-    <div class="Asus">
-      <div class="heading">
-        <h1>Best deals on Asus Laptops</h1>
-      </div>
-      <div class="cards">
-        <div class="card1">
-          <a href="https://www.flipkart.com/asus-vivobook-16-2025-copilot-pc-office-2024-m365-basic-ai-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-x1607qa-mb050ws-thin-light-laptop/p/itm027fd729972e0?pid=COMH9EVGYMHA7TK4&lid=LSTCOMH9EVGYMHA7TK4BDDAVP&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1ak_k3_xTuEXtAjkiOAltfhvJ2f6rj3nDLw3UKTcpSOJVfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus-1.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-vivobook-16-2025-copilot-pc-office-2024-m365-basic-ai-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-x1607qa-mb050ws-thin-light-laptop/p/itm027fd729972e0?pid=COMH9EVGYMHA7TK4&lid=LSTCOMH9EVGYMHA7TK4BDDAVP&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1ak_k3_xTuEXtAjkiOAltfhvJ2f6rj3nDLw3UKTcpSOJVfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS Vivobook 16 <br><b>₹55,990..</b></h5>
-            <p class="card-text">
-              16 Inch FHD+ (1920 x 1200, WUXGA) 16:10 aspect ratio, 60Hz refresh rate, LED Backlit Anti-glare IPS-level
-              Panel, 89% Screen-to-body ratio
-              Light Laptop without Optical Disk</p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-vivobook-16-2025-copilot-pc-office-2024-m365-basic-ai-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-x1607qa-mb050ws-thin-light-laptop/p/itm027fd729972e0?pid=COMH9EVGYMHA7TK4&lid=LSTCOMH9EVGYMHA7TK4BDDAVP&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1ak_k3_xTuEXtAjkiOAltfhvJ2f6rj3nDLw3UKTcpSOJVfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card border-0 shadow h-100 text-center p-4">
+
+                <h1>🚚</h1>
+
+                <h5>Free Delivery</h5>
+
+                <p>Fast & free delivery across India.</p>
+
+            </div>
+
         </div>
 
-        <div class="card2">
-          <a href="https://www.flipkart.com/asus-gaming-v16-2025-creator-office-2024-m365-basic-ai-pc-intel-core-5-210h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-v3607vu-rp550ws-laptop/p/itm098aec3c37243?pid=COMH89EB4YHB2R5U&lid=LSTCOMH89EB4YHB2R5UAEKWSN&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1akrrTp1-X3DXyzEdylHIdlYgFg_WAM7c4VEGz1OGeG7EfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus-2.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-gaming-v16-2025-creator-office-2024-m365-basic-ai-pc-intel-core-5-210h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-v3607vu-rp550ws-laptop/p/itm098aec3c37243?pid=COMH89EB4YHB2R5U&lid=LSTCOMH89EB4YHB2R5UAEKWSN&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1akrrTp1-X3DXyzEdylHIdlYgFg_WAM7c4VEGz1OGeG7EfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS Gaming V16<br><b>₹78,990..</b></h5>
-            <p class="card-text">
-              16 Inch FHD+, 16:10 aspect ratio, 144Hz refresh rate, 300nits, 45% NTSC color gamut
-              Light Laptop without Optical Disk Drive
-              Preloaded with MS Office</p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-gaming-v16-2025-creator-office-2024-m365-basic-ai-pc-intel-core-5-210h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-v3607vu-rp550ws-laptop/p/itm098aec3c37243?pid=COMH89EB4YHB2R5U&lid=LSTCOMH89EB4YHB2R5UAEKWSN&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1akrrTp1-X3DXyzEdylHIdlYgFg_WAM7c4VEGz1OGeG7EfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card border-0 shadow h-100 text-center p-4">
+
+                <h1>💳</h1>
+
+                <h5>Easy EMI</h5>
+
+                <p>No-cost EMI on selected laptops.</p>
+
+            </div>
+
         </div>
 
+        <div class="col-lg-3 col-md-6">
 
-        <div class="card3">
-          <a href="https://www.flipkart.com/asus-vivobook-go-15-oled-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-e1504fa-lk322ws-thin-light-laptop/p/itm3de88f71e558b?pid=COMGMGXFE9F37AMQ&lid=LSTCOMGMGXFE9F37AMQLGQ2YD&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGMGXFE9F37AMQ.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus-3.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-vivobook-go-15-oled-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-e1504fa-lk322ws-thin-light-laptop/p/itm3de88f71e558b?pid=COMGMGXFE9F37AMQ&lid=LSTCOMGMGXFE9F37AMQLGQ2YD&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGMGXFE9F37AMQ.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS Vivobook Go 15 <br><b>₹34,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 Inch FHD (1920 x 1080) OLED 16:9 aspect ratio, Glossy display, 0.2ms response time, 600nits HDR peak
-              Brightness, 100% DCI-P3.
-            </p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-vivobook-go-15-oled-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-e1504fa-lk322ws-thin-light-laptop/p/itm3de88f71e558b?pid=COMGMGXFE9F37AMQ&lid=LSTCOMGMGXFE9F37AMQLGQ2YD&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_5&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGMGXFE9F37AMQ.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
+            <div class="card border-0 shadow h-100 text-center p-4">
 
-      <div class="cards1">
-        <div class="card5">
-          <a href="https://www.flipkart.com/asus-vivobook-s14-2025-office-2024-m365-basic-metallic-design-copilot-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-s3407qa-kp027ws-thin-light-laptop/p/itmafafdebe9e0fe?pid=COMH9SJ9R2XPUEKZ&lid=LSTCOMH9SJ9R2XPUEKZ5XQBHY&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1anoAZd8yyN0DLCigEvp2hJW0fTrNXDs66wmPy8ISWKBFH3Gaq_wzx4HJysDmGalzMk%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus-4.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-vivobook-s14-2025-office-2024-m365-basic-metallic-design-copilot-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-s3407qa-kp027ws-thin-light-laptop/p/itmafafdebe9e0fe?pid=COMH9SJ9R2XPUEKZ&lid=LSTCOMH9SJ9R2XPUEKZ5XQBHY&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1anoAZd8yyN0DLCigEvp2hJW0fTrNXDs66wmPy8ISWKBFH3Gaq_wzx4HJysDmGalzMk%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS Vivobook S14 <br><b>₹59,990..</b></h5>
-            <p class="card-text">
-              Stylish & Portable Thin and Light Laptop
-              14 inch 2.5K (2560 x 1600, WQXGA) 16:10 aspect ratio, 400nits, 60Hz refresh rate
-            </p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-vivobook-s14-2025-office-2024-m365-basic-metallic-design-copilot-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-s3407qa-kp027ws-thin-light-laptop/p/itmafafdebe9e0fe?pid=COMH9SJ9R2XPUEKZ&lid=LSTCOMH9SJ9R2XPUEKZ5XQBHY&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1anoAZd8yyN0DLCigEvp2hJW0fTrNXDs66wmPy8ISWKBFH3Gaq_wzx4HJysDmGalzMk%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+                <h1>🛡️</h1>
+
+                <h5>Warranty</h5>
+
+                <p>Official brand warranty included.</p>
+
+            </div>
+
         </div>
 
-        <div class="card6">
-          <a href="https://www.flipkart.com/asus-chromebook-intel-celeron-dual-core-n4500-4-gb-128-gb-emmc-storage-chrome-os-cx1500cka-nj0413/p/itmc1d20ec9ce589?pid=COMGSHM3XZGQ5MGT&lid=LSTCOMGSHM3XZGQ5MGTME70B6&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGSHM3XZGQ5MGT.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus--5.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-chromebook-intel-celeron-dual-core-n4500-4-gb-128-gb-emmc-storage-chrome-os-cx1500cka-nj0413/p/itmc1d20ec9ce589?pid=COMGSHM3XZGQ5MGT&lid=LSTCOMGSHM3XZGQ5MGTME70B6&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGSHM3XZGQ5MGT.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS Chromebook<br><b>₹16,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 Inch Full HD, LED Backlit
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-chromebook-intel-celeron-dual-core-n4500-4-gb-128-gb-emmc-storage-chrome-os-cx1500cka-nj0413/p/itmc1d20ec9ce589?pid=COMGSHM3XZGQ5MGT&lid=LSTCOMGSHM3XZGQ5MGTME70B6&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=1d9f1101-b699-491f-80fb-f32690858472.COMGSHM3XZGQ5MGT.SEARCH&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card border-0 shadow h-100 text-center p-4">
+
+                <h1>📞</h1>
+
+                <h5>24×7 Support</h5>
+
+                <p>Our support team is always available.</p>
+
+            </div>
+
         </div>
 
-        <div class="card6">
-          <a href="https://www.flipkart.com/asus-tuf-gaming-a15-amd-ryzen-7-octa-core-7435hs-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-fa507nur-lp082w-laptop/p/itmc6ca6f861b082?pid=COMH2XBQSRKDXZMC&lid=LSTCOMH2XBQSRKDXZMCIHNGPM&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_21&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1amxMGop3IjC2y9HG-ggL2X32BuegJ6B40jzIn074vmfRZ2-SIbIDZ6lLvgRS75Tj4w%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"><img src="Images/Asus-6.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/asus-tuf-gaming-a15-amd-ryzen-7-octa-core-7435hs-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-fa507nur-lp082w-laptop/p/itmc6ca6f861b082?pid=COMH2XBQSRKDXZMC&lid=LSTCOMH2XBQSRKDXZMCIHNGPM&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_21&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1amxMGop3IjC2y9HG-ggL2X32BuegJ6B40jzIn074vmfRZ2-SIbIDZ6lLvgRS75Tj4w%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-                target="_blank">ASUS TUF Gaming<br><b>₹84,990..</b></h5>
-            <p class="card-text">15.6 Inch Full HD, 144Hz, 85/85/85/85, Value IPS-level, 1000:1, 250nits, 72%, 100%,
-              75.35%, Anti-glare display</p></a>
-          </div>
-          <a href="https://www.flipkart.com/asus-tuf-gaming-a15-amd-ryzen-7-octa-core-7435hs-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-fa507nur-lp082w-laptop/p/itmc6ca6f861b082?pid=COMH2XBQSRKDXZMC&lid=LSTCOMH2XBQSRKDXZMCIHNGPM&marketplace=FLIPKART&q=asus+best+laptop&store=6bo%2Fb5g&srno=s_1_21&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_na_na_na&fm=organic&iid=en_5Y8eM_jCDWYnikm9URC44xSw2hScPJlx1j2igyAq1amxMGop3IjC2y9HG-ggL2X32BuegJ6B40jzIn074vmfRZ2-SIbIDZ6lLvgRS75Tj4w%3D&ppt=hp&ppn=homepage&ssid=3u5nytwhcw0000001753292357706&qH=2b7625654c0e6d8d"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
     </div>
 
+</section>
 
+<!-- ================= TOP BRANDS ================= -->
 
-    <div class="Lenovo">
-      <div class="heading">
-        <h1>Best deals on Lenovo Laptops</h1>
-      </div>
-      <div class="cards">
-        <div class="card1">
-          <a href=https://www.flipkart.com/lenovo-slim-5-co-pilot-next-gen-ai-pc-full-metal-snapdragon-x-plus-16-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm8a59041fc8c0f?pid=COMH4N9CZ7JKPQQC&lid=LSTCOMH4N9CZ7JKPQQCOFLXDU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm7aFiibWwWO7g5BjAomRDZLhhGiXExv-yvTQa002POi_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-1.webp" class="card-img-top "></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/lenovo-slim-5-co-pilot-next-gen-ai-pc-full-metal-snapdragon-x-plus-16-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm8a59041fc8c0f?pid=COMH4N9CZ7JKPQQC&lid=LSTCOMH4N9CZ7JKPQQCOFLXDU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm7aFiibWwWO7g5BjAomRDZLhhGiXExv-yvTQa002POi_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo Slim<br><b>₹65,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              14 Inch WUXGA, IPS 300nits Anti-glare, 100% sRGB
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/lenovo-slim-5-co-pilot-next-gen-ai-pc-full-metal-snapdragon-x-plus-16-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm8a59041fc8c0f?pid=COMH4N9CZ7JKPQQC&lid=LSTCOMH4N9CZ7JKPQQCOFLXDU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm7aFiibWwWO7g5BjAomRDZLhhGiXExv-yvTQa002POi_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+<section class="container py-5">
+
+    <h2 class="text-center fw-bold mb-5">
+        Shop by Brand
+    </h2>
+
+    <div class="row text-center g-4">
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/hp-logo.png" class="img-fluid brand-logo">
         </div>
 
-        <div class="card2">
-          <a href="http://flipkart.com/lenovo-ideapad-slim-3-ai-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-15q8x10-thin-light-laptop/p/itm097ac7e15511b?pid=COMHDMJYDGBTMJXG&lid=LSTCOMHDMJYDGBTMJXG8XSMNX&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAmftD2r6xsMALIgzR_XqZGK4mVezRaIo9MqRNI-Dxm3nvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-2.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/hp-omen-amd-ryzenhttp://flipkart.com/lenovo-ideapad-slim-3-ai-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-15q8x10-thin-light-laptop/p/itm097ac7e15511b?pid=COMHDMJYDGBTMJXG&lid=LSTCOMHDMJYDGBTMJXG8XSMNX&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAmftD2r6xsMALIgzR_XqZGK4mVezRaIo9MqRNI-Dxm3nvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo IdeaPad<br><b>₹59,990..</b></h5>
-            <p class="card-text">
-              15.3 inch WUXGA (1920x1200) IPS 300nits Anti-glare, 45% NTSC
-              Finger Print Sensor for Faster System Access
-              Light Laptop</p></a>
-          </div>
-          <a href="http://flipkart.com/lenovo-ideapad-slim-3-ai-pc-qualcomm-snapdragon-x-16-gb-512-gb-ssd-windows-11-home-15q8x10-thin-light-laptop/p/itm097ac7e15511b?pid=COMHDMJYDGBTMJXG&lid=LSTCOMHDMJYDGBTMJXG8XSMNX&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAmftD2r6xsMALIgzR_XqZGK4mVezRaIo9MqRNI-Dxm3nvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/dell-logo.png" class="img-fluid brand-logo">
         </div>
 
-
-        <div class="card3">
-          <a href="http://flipkart.com/lenovo-yoga-slim-7-qualcomm-snapdragon-x-plus-32-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm54e8de57bb730?pid=COMH9C7XFM6KJGJK&lid=LSTCOMH9C7XFM6KJGJKPVFXIG&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm1jMAr2RJcq10MjtQU2EnIw6RAys0QKYusMuVRgFL2HvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-3.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="http://flipkart.com/lenovo-yoga-slim-7-qualcomm-snapdragon-x-plus-32-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm54e8de57bb730?pid=COMH9C7XFM6KJGJK&lid=LSTCOMH9C7XFM6KJGJKPVFXIG&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm1jMAr2RJcq10MjtQU2EnIw6RAys0QKYusMuVRgFL2HvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo Yoga Slim<br><b>₹1,29,190..</b></h5>
-            <p class="card-text">14.5 Inch OLED 1000nits (Peak) / 500nits (Typical) Glossy / Anti-fingerprint, 100%
-              DCI-P3, 100% sRGB, 90Hz
-            </p></a>
-          </div>
-          <a href="http://flipkart.com/lenovo-yoga-slim-7-qualcomm-snapdragon-x-plus-32-gb-1-tb-ssd-windows-11-home-14q8x9-thin-light-laptop/p/itm54e8de57bb730?pid=COMH9C7XFM6KJGJK&lid=LSTCOMH9C7XFM6KJGJKPVFXIG&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=en_5_jVY20ZJqm67z2eQZNPi-sVVu-0e7kXcBsGJmhUOAm1jMAr2RJcq10MjtQU2EnIw6RAys0QKYusMuVRgFL2HvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
-
-      <div class="cards1">
-        <div class="card5">
-          <a href="https://www.flipkart.com/lenovo-chromebook-mediatek-kompanio-520-4-gb-128-gb-emmc-storage-chrome-os-14m868/p/itm4dc67999fe3de?pid=COMGSYYSHRSUEGMG&lid=LSTCOMGSYYSHRSUEGMGL82DZU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGSYYSHRSUEGMG.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-4.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/lenovo-chromebook-mediatek-kompanio-520-4-gb-128-gb-emmc-storage-chrome-os-14m868/p/itm4dc67999fe3de?pid=COMGSYYSHRSUEGMG&lid=LSTCOMGSYYSHRSUEGMGL82DZU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGSYYSHRSUEGMG.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo Chromebook <br><b>₹13,990..</b></h5>
-            <p class="card-text">14 Inch HD, TN 250nits Anti-glare, 45% NTSC
-              Light Laptop without Optical Disk Drivee, GST invoice available</p></a>
-          </div>
-          <a href="https://www.flipkart.com/lenovo-chromebook-mediatek-kompanio-520-4-gb-128-gb-emmc-storage-chrome-os-14m868/p/itm4dc67999fe3de?pid=COMGSYYSHRSUEGMG&lid=LSTCOMGSYYSHRSUEGMGL82DZU&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGSYYSHRSUEGMG.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/asus-logo.png" class="img-fluid brand-logo">
         </div>
 
-        <div class="card6">
-          <a href="https://www.flipkart.com/lenovo-v15-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-g4-amn-1-thin-light-laptop/p/itmdcccd5f5d1865?pid=COMGPYKZAWY8UX6C&lid=LSTCOMGPYKZAWY8UX6COY6PST&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_17&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGPYKZAWY8UX6C.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-5.jpg" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/lenovo-v15-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-g4-amn-1-thin-light-laptop/p/itmdcccd5f5d1865?pid=COMGPYKZAWY8UX6C&lid=LSTCOMGPYKZAWY8UX6COY6PST&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_17&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGPYKZAWY8UX6C.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo V15 AMD<br><b>₹29,999..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              15.6 inch Full HD Anti-glare Display
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/lenovo-v15-amd-ryzen-3-quad-core-7320u-8-gb-512-gb-ssd-windows-11-home-g4-amn-1-thin-light-laptop/p/itmdcccd5f5d1865?pid=COMGPYKZAWY8UX6C&lid=LSTCOMGPYKZAWY8UX6COY6PST&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_17&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMGPYKZAWY8UX6C.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/lenovo-logo.png" class="img-fluid brand-logo">
         </div>
 
-        <div class="card6">
-          <a href="https://www.flipkart.com/lenovo-v14-intel-core-i5-12th-gen-1235u-16-gb-512-gb-ssd-windows-11-home-v-14-thin-light-laptop/p/itme87a00a2ff6c2?pid=COMH76FG3MCSNRDV&lid=LSTCOMH76FG3MCSNRDVIANFKE&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_24&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMH76FG3MCSNRDV.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"><img src="Images/Lenovo-6.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/lenovo-v14-intel-core-i5-12th-gen-1235u-16-gb-512-gb-ssd-windows-11-home-v-14-thin-light-laptop/p/itme87a00a2ff6c2?pid=COMH76FG3MCSNRDV&lid=LSTCOMH76FG3MCSNRDVIANFKE&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_24&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMH76FG3MCSNRDV.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-                target="_blank">Lenovo V14<br><b>₹42,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              14.1 inch FHD
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/lenovo-v14-intel-core-i5-12th-gen-1235u-16-gb-512-gb-ssd-windows-11-home-v-14-thin-light-laptop/p/itme87a00a2ff6c2?pid=COMH76FG3MCSNRDV&lid=LSTCOMH76FG3MCSNRDVIANFKE&marketplace=FLIPKART&q=lenovo+laptop&store=6bo%2Fb5g&srno=s_1_24&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=search-autosuggest&iid=afd86d31-d9b0-4d35-b95a-7b35e193e089.COMH76FG3MCSNRDV.SEARCH&ppt=sp&ppn=sp&ssid=wxbeqmr4f40000001753294603761&qH=86f3cf6b571c1490"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/acer-logo.png" class="img-fluid brand-logo">
         </div>
-      </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="Images/apple-logo.png" class="img-fluid brand-logo">
+        </div>
+
     </div>
 
+</section>
 
+<!-- ================= NEWSLETTER ================= -->
 
-    <div class="Infinix">
-      <div class="heading">
-        <h1>Best deals on Infinix Laptops</h1>
-      </div>
-      <div class="cards">
-        <div class="card1">
-          <a href="https://www.flipkart.com/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44DKVFUFVS&lid=LSTCOMHYS44DKVFUFVS2KZG86&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMHYS44DKVFUFVS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/infinix-1.webp" class="card-img-top "></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44DKVFUFVS&lid=LSTCOMHYS44DKVFUFVS2KZG86&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMHYS44DKVFUFVS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix GT Book<br><b>₹53,990..</b></h5>
-            <p class="card-text">
-              16 inch Full HD, Anti Glare, 120Hz Display, 16:10 Aspect Ratio, 300nits Peak Brightness, 100% sRGB
-              Light Laptop without Optical Disk Drivee</p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44DKVFUFVS&lid=LSTCOMHYS44DKVFUFVS2KZG86&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMHYS44DKVFUFVS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
+<section class="bg-primary text-white py-5">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold">
+
+            Subscribe for Laptop Deals
+
+        </h2>
+
+        <p>
+
+            Get exclusive offers and latest laptop launches.
+
+        </p>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6">
+
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter your email">
+
+                    <button class="btn btn-warning">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="card2">
-          <a href="https://www.flipkart.com/infinix-zero-book-series-intel-core-i5-12th-gen-12500h-16-gb-512-gb-ssd-windows-11-home-zl12-business-laptop/p/itmad7e026e8b8c5?pid=COMGMFK7MHZWV5YY&lid=LSTCOMGMFK7MHZWV5YYZF2TNE&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGMFK7MHZWV5YY.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/infinix-2.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-zero-book-series-intel-core-i5-12th-gen-12500h-16-gb-512-gb-ssd-windows-11-home-zl12-business-laptop/p/itmad7e026e8b8c5?pid=COMGMFK7MHZWV5YY&lid=LSTCOMGMFK7MHZWV5YYZF2TNE&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGMFK7MHZWV5YY.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix ZERO BOOK <br><b>₹54,527..</b></h5>
-            <p class="card-text">
-              15.6 inch Full HD IPS Display (400nits peak brightness, 100% sRGB, NTSC 72%)
-              Finger Print Sensor for Faster System Access
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-zero-book-series-intel-core-i5-12th-gen-12500h-16-gb-512-gb-ssd-windows-11-home-zl12-business-laptop/p/itmad7e026e8b8c5?pid=COMGMFK7MHZWV5YY&lid=LSTCOMGMFK7MHZWV5YYZF2TNE&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGMFK7MHZWV5YY.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-
-        <div class="card3">
-          <a href="https://www.flipkart.com/infinix-y3-max-series-intel-core-i7-12th-gen-1255u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itm6267fa4f35865?pid=COMH34U3RK5MYYUP&lid=LSTCOMH34U3RK5MYYUP2YDGVM&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMH34U3RK5MYYUP.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/Infinix-3.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-y3-max-series-intel-core-i7-12th-gen-1255u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itm6267fa4f35865?pid=COMH34U3RK5MYYUP&lid=LSTCOMH34U3RK5MYYUP2YDGVM&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMH34U3RK5MYYUP.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix Y3 Max<br><b>₹39,990.</b></h5>
-            <p class="card-text">16 Inch Full HD Display, Anti Glare (16:10 Aspect Ratio, 300nits peak brightness, ,
-              NTSC 60%)
-              Light Laptop without Optical Disk Drive Net banking & Credit/ Debit/ ATM card
-            </p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-y3-max-series-intel-core-i7-12th-gen-1255u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itm6267fa4f35865?pid=COMH34U3RK5MYYUP&lid=LSTCOMH34U3RK5MYYUP2YDGVM&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMH34U3RK5MYYUP.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
-
-      <div class="cards1">
-        <div class="card5">
-          <a href="https://www.flipkart.com/infinix-y4-max-series-intel-core-i5-13th-gen-1335u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itmf0f9170b3ca9f?pid=COMGWWDHGV7EK2ES&lid=LSTCOMGWWDHGV7EK2ESUIW91L&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGWWDHGV7EK2ES.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/infinix-4.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-y4-max-series-intel-core-i5-13th-gen-1335u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itmf0f9170b3ca9f?pid=COMGWWDHGV7EK2ES&lid=LSTCOMGWWDHGV7EK2ESUIW91L&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGWWDHGV7EK2ES.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix Y4 Max <br><b>₹44,990..</b></h5>
-            <p class="card-text">Stylish & Portable Thin and Light Laptop
-              16 inch Full HD Display, Anti Glare, 300nits peak brightness, NTSC 60%
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-y4-max-series-intel-core-i5-13th-gen-1335u-16-gb-512-gb-ssd-windows-11-home-yl613-thin-light-laptop/p/itmf0f9170b3ca9f?pid=COMGWWDHGV7EK2ES&lid=LSTCOMGWWDHGV7EK2ESUIW91L&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGWWDHGV7EK2ES.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-        <div class="card6">
-          <a href="https://www.flipkart.com/infinix-inbook-x2-plus-intel-core-i7-11th-gen-1195g7-16-gb-512-gb-ssd-windows-11-home-xl25-thin-light-laptop/p/itmb526ed40e41a3?pid=COMGGQE93WGJJF5R&lid=LSTCOMGGQE93WGJJF5RAIAMDD&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGGQE93WGJJF5R.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/Infinix-5.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-inbook-x2-plus-intel-core-i7-11th-gen-1195g7-16-gb-512-gb-ssd-windows-11-home-xl25-thin-light-laptop/p/itmb526ed40e41a3?pid=COMGGQE93WGJJF5R&lid=LSTCOMGGQE93WGJJF5RAIAMDD&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGGQE93WGJJF5R.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix INBook X2<br><b>₹57,990..</b></h5>
-            <p class="card-text">
-              Stylish & Portable Thin and Light Laptop
-              15.6 Inch IPS FHD Display (300nits peak brightness, 100% sRGB, NTSC 72%)
-              Light Laptop without Optical Disk Drive</p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-inbook-x2-plus-intel-core-i7-11th-gen-1195g7-16-gb-512-gb-ssd-windows-11-home-xl25-thin-light-laptop/p/itmb526ed40e41a3?pid=COMGGQE93WGJJF5R&lid=LSTCOMGGQE93WGJJF5RAIAMDD&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGGQE93WGJJF5R.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-
-        <div class="card6">
-          <a href="https://www.flipkart.com/infinix-intel-core-i7-10th-gen-1065g7-8-gb-512-gb-ssd-windows-11-home-128-mb-graphics-xl21-thin-light-laptop/p/itm16234aa3afdfa?pid=COMGQHVMZYZ3TFNS&lid=LSTCOMGQHVMZYZ3TFNSJ4AMYR&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGQHVMZYZ3TFNS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"><img src="Images/Infinix-6.webp" class="card-img-top"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a
-                href="https://www.flipkart.com/infinix-intel-core-i7-10th-gen-1065g7-8-gb-512-gb-ssd-windows-11-home-128-mb-graphics-xl21-thin-light-laptop/p/itm16234aa3afdfa?pid=COMGQHVMZYZ3TFNS&lid=LSTCOMGQHVMZYZ3TFNSJ4AMYR&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGQHVMZYZ3TFNS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-                target="_blank">Infinix Intel Core<br><b>₹39,990..</b></h5>
-            <p class="card-text">4 Inch Full HD IPS Display (300nits peak brightness, 100% sRGB, NTSC 72%)
-              Light Laptop without Optical Disk Drive Net banking & Credit/ Debit/ ATM card
-            </p></a>
-          </div>
-          <a href="https://www.flipkart.com/infinix-intel-core-i7-10th-gen-1065g7-8-gb-512-gb-ssd-windows-11-home-128-mb-graphics-xl21-thin-light-laptop/p/itm16234aa3afdfa?pid=COMGQHVMZYZ3TFNS&lid=LSTCOMGQHVMZYZ3TFNSJ4AMYR&marketplace=FLIPKART&q=infinix+laptop+hiigh+prise&store=6bo%2Fb5g&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=0f5da16b-bc24-4127-8a99-cd5e767205f4.COMGQHVMZYZ3TFNS.SEARCH&ppt=hp&ppn=homepage&ssid=2bx9if7r280000001753373411235&qH=b58845c2c749bf4e"
-            target="_blank"
-            class="btn btn-primary w-100 w-sm-auto rounded-pill shadow-sm px-4 py-2 d-flex align-items-center justify-content-center gap-2 fs-6">
-            <b class="bi bi-cart-fill"> Buy Now</b>
-          </a>
-        </div>
-      </div>
     </div>
-  </main>
 
-  
-  <footer>
-    <div class="footer">
-      <div class="footer-data">
-        <div class="about">
-          <ul>
-            <p>ABOUT</p>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>carrers</li>
-            <li>SmartzMart stories</li>
-            <li>Carporate Informationn</li>
-          </ul>
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white pt-5">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 mb-4">
+
+                <h3 class="text-warning fw-bold">
+                    💻 SmartzMart
+                </h3>
+
+                <p>
+                    Your trusted online destination for premium laptops,
+                    gaming machines, student notebooks and business devices.
+                    Shop with confidence and enjoy the best deals every day.
+                </p>
+
+            </div>
+
+            <div class="col-lg-2 mb-4">
+
+                <h5 class="text-warning">
+                    Categories
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+
+                    <li><a href="mobiles.html" class="text-white text-decoration-none">Mobiles</a></li>
+
+                    <li><a href="laptops.html" class="text-white text-decoration-none">Laptops</a></li>
+
+                    <li><a href="Tvs.html" class="text-white text-decoration-none">Smart TVs</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 mb-4">
+
+                <h5 class="text-warning">
+                    Customer Care
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li><a href="Support.html" class="text-white text-decoration-none">Support</a></li>
+
+                    <li><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
+
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 mb-4">
+
+                <h5 class="text-warning">
+                    Contact
+                </h5>
+
+                <p>📧 sanketghayal3@gmail.com</p>
+
+<p>📞 +91 8605455827</p>
+
+<p>📍 Pune, Maharashtra</p>
+
+            </div>
+
         </div>
-        <div class="group-of-companies">
-          <ul>
-            <p>GROUP OF COMPANIES</p>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>carrers</li>
-            <li>SmartzMart stories</li>
-            <li>Carporate Informationn</li>
-          </ul>
+
+        <hr>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6 text-center text-md-start">
+
+                © 2026 SmartzMart | Designed by Sanket Ghayal
+
+            </div>
+
+            <div class="col-md-6 text-center text-md-end">
+
+                💳 Visa &nbsp;
+                💳 Mastercard &nbsp;
+                💰 UPI &nbsp;
+                📱 Paytm
+
+            </div>
+
         </div>
-        <div class="mail">
-          <ul>
-            <p>MAIL US</p>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>carrers</li>
-            <li>SmartzMart stories</li>
-            <li>Carporate Informationn</li>
-          </ul>
-        </div>
-        <div class="office-address">
-          <ul>
-            <p>OFFICE ADDRESS</p>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>carrers</li>
-            <li>SmartzMart stories</li>
-            <li>Carporate Informationn</li>
-          </ul>
-        </div>
-        <div class="help">
-          <ul>
-            <p>HELP</p>
-            <li>Contact us</li>
-            <li>About us</li>
-            <li>carrers</li>
-            <li>SmartzMart stories</li>
-            <li>Carporate Informationn</li>
-          </ul>
-        </div>
-      </div>
+
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
+
+</footer>
+
+<!-- Back To Top -->
+
+<button id="topBtn"
+        class="btn btn-warning rounded-circle">
+
+⬆
+
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+</script>
+
 </body>
 
 </html>
