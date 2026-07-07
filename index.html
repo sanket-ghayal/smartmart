@@ -1,1059 +1,1185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartzMart – Home</title>
-  <!-- Bootstrap CSS — NO leading space! -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartzMart – Home</title>
+    <!-- Bootstrap CSS — NO leading space! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
 
-        <!-- Logo -->
-        <a class="navbar-brand fw-bold fs-2 text-warning" href="index.html">
-            📱 SmartzMart
-        </a>
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-2 text-warning" href="index.html">
+                📱 SmartzMart
+            </a>
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-            <!-- Menu -->
-            <ul class="navbar-nav mx-auto">
+                <!-- Menu -->
+                <ul class="navbar-nav mx-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="mobiles.html">Mobiles</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mobiles.html">Mobiles</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="laptops.html">Laptops</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laptops.html">Laptops</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Tvs.html">Smart TVs</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tvs.html">Smart TVs</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Support.html">Support</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Support.html">Support</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
 
-            </ul>
+                </ul>
 
-            <!-- Search -->
-            <form class="d-flex">
-                <input class="form-control me-2"
-                    type="search"
-                    placeholder="Search Products">
+                <!-- Search -->
+                <form class="d-flex">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search Products..."
+                        onkeyup="searchProducts()">
 
-                <button class="btn btn-warning">
-                    Search
-                </button>
-            </form>
+                    <button class="btn btn-warning">
+                        Search
+                    </button>
+                </form>
+                <a href="cart.html" class="btn btn-outline-warning ms-3 position-relative">
+
+                    🛒 Cart
+
+                    <span id="cartCount"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        0
+
+                    </span>
+
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <span class="hero-badge">
+                        🔥 India's No.1 Electronics Store
+                    </span>
+
+                    <h1 class="display-3 fw-bold mt-3">
+
+                        Upgrade Your Digital Life
+
+                    </h1>
+
+                    <p class="lead mt-4">
+
+                        Discover the latest smartphones, laptops, smart TVs and accessories at unbeatable prices with
+                        fast delivery across India.
+
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="mobiles.html" class="btn btn-warning btn-lg me-3">
+
+                            Shop Now
+
+                        </a>
+
+                        <a href="Support.html" class="btn btn-outline-light btn-lg">
+
+                            Learn More
+
+                        </a>
+
+                    </div>
+
+                    <div class="row mt-5">
+
+                        <div class="col-4">
+
+                            <h2 class="fw-bold">15K+</h2>
+
+                            <p>Happy Customers</p>
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <h2 class="fw-bold">500+</h2>
+
+                            <p>Products</p>
+
+                        </div>
+
+                        <div class="col-4">
+
+                            <h2 class="fw-bold">24/7</h2>
+
+                            <p>Support</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img src="Images/hero-shopping.png" class="img-fluid hero-img" alt="Shopping">
+
+                </div>
+
+            </div>
 
         </div>
-    </div>
-</nav>
-<!-- ================= HERO ================= -->
 
-<section class="container-fluid bg-light py-5">
+    </section>
+    <!-- ================= FEATURED CATEGORIES ================= -->
 
-<div class="container">
+    <section class="container py-5">
 
-<div class="row align-items-center">
+        <h2 class="text-center fw-bold mb-5">
 
-<div class="col-lg-6">
+            Shop by Category
 
-<h1 class="display-4 fw-bold">
+        </h2>
 
-Welcome to
+        <div class="row g-4">
 
-<span class="text-primary">
+            <div class="col-md-4">
 
-SmartzMart
+                <div class="card shadow border-0 text-center p-4">
 
-</span>
+                    <img src="Images/mobile-category.png" class="img-fluid mx-auto"
+                        style="height:180px;object-fit:contain;">
 
-</h1>
+                    <h4 class="mt-3">
 
-<p class="lead mt-4">
+                        Mobiles
 
-Discover premium smartphones,
+                    </h4>
 
-gaming laptops,
+                    <p>
 
-4K Smart TVs,
+                        Latest Android & iPhones
 
-and top electronic gadgets
+                    </p>
 
-at unbeatable prices.
+                    <a href="mobiles.html" class="btn btn-primary">
 
-</p>
+                        Explore
 
-<div class="mt-4">
+                    </a>
 
-<a href="mobiles.html"
+                </div>
 
-class="btn btn-primary btn-lg me-3">
+            </div>
 
-Shop Now
+            <div class="col-md-4">
 
-</a>
+                <div class="card shadow border-0 text-center p-4">
 
-<a href="Contact.html"
+                    <img src="Images/laptop-category.png" class="img-fluid mx-auto"
+                        style="height:180px;object-fit:contain;">
 
-class="btn btn-outline-dark btn-lg">
+                    <h4 class="mt-3">
 
-Contact Us
+                        Laptops
 
-</a>
+                    </h4>
 
-</div>
+                    <p>
 
-</div>
+                        Gaming & Business Laptops
 
-<div class="col-lg-6 text-center">
+                    </p>
 
-<img src="Images/hero-shopping.png"
+                    <a href="laptops.html" class="btn btn-primary">
 
-class="img-fluid"
+                        Explore
 
-alt="Shopping Illustration">
+                    </a>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+            <div class="col-md-4">
 
-</section>
+                <div class="card shadow border-0 text-center p-4">
 
-<!-- ================= FEATURED CATEGORIES ================= -->
+                    <img src="Images/tv-category.png" class="img-fluid mx-auto"
+                        style="height:180px;object-fit:contain;">
 
-<section class="container py-5">
+                    <h4 class="mt-3">
 
-<h2 class="text-center fw-bold mb-5">
+                        Smart TVs
 
-Shop by Category
+                    </h4>
 
-</h2>
+                    <p>
 
-<div class="row g-4">
+                        Ultra HD 4K TVs
 
-<div class="col-md-4">
+                    </p>
 
-<div class="card shadow border-0 text-center p-4">
+                    <a href="Tvs.html" class="btn btn-primary">
 
-<img src="Images/mobile-category.png"
+                        Explore
 
-class="img-fluid mx-auto"
+                    </a>
 
-style="height:180px;object-fit:contain;">
+                </div>
 
-<h4 class="mt-3">
+            </div>
 
-Mobiles
+        </div>
 
-</h4>
+    </section>
+    <!-- ================= FEATURED MOBILES ================= -->
 
-<p>
+    <section class="container py-5">
 
-Latest Android & iPhones
+        <div class="d-flex justify-content-between align-items-center mb-4">
 
-</p>
+            <h2 class="fw-bold">🔥 Best Deals on Smartphones</h2>
 
-<a href="mobiles.html"
+            <a href="mobiles.html" class="btn btn-outline-primary">
+                View All
+            </a>
 
-class="btn btn-primary">
+        </div>
 
-Explore
+        <div class="row g-4">
 
-</a>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6">
 
-</div>
+                <div class="card product-card h-100 shadow border-0">
 
-</div>
+                    <span class="badge bg-danger position-absolute m-3">
+                        20% OFF
+                    </span>
 
-<div class="col-md-4">
+                    <img src="Images/iphone.avif" class="card-img-top p-4" style="height:230px;object-fit:contain;">
 
-<div class="card shadow border-0 text-center p-4">
+                    <div class="card-body text-center">
 
-<img src="Images/laptop-category.png"
+                        <h5 class="fw-bold">
+                            Apple iPhone 13
+                        </h5>
 
-class="img-fluid mx-auto"
+                        <p class="text-muted">
+                            128GB | Starlight
+                        </p>
 
-style="height:180px;object-fit:contain;">
+                        <h4 class="text-success">
+                            ₹49,999
+                        </h4>
 
-<h4 class="mt-3">
+                        <small class="text-decoration-line-through text-secondary">
+                            ₹59,999
+                        </small>
 
-Laptops
+                        <div class="d-grid gap-2 mt-3">
 
-</h4>
+                            <button class="btn btn-warning" onclick="addToCart(1)">
 
-<p>
+                                🛒 Add to Cart
 
-Gaming & Business Laptops
+                            </button>
 
-</p>
+                            <a href="mobiles.html" class="btn btn-outline-primary">
 
-<a href="laptops.html"
+                                View Details
 
-class="btn btn-primary">
+                            </a>
 
-Explore
+                        </div>
+                    </div>
 
-</a>
+                </div>
 
-</div>
+            </div>
 
-</div>
+            <!-- Product 2 -->
 
-<div class="col-md-4">
+            <div class="col-lg-3 col-md-6">
 
-<div class="card shadow border-0 text-center p-4">
+                <div class="card h-100 shadow border-0 product-card">
 
-<img src="Images/tv-category.png"
+                    <span class="badge bg-success position-absolute m-3">
+                        NEW
+                    </span>
 
-class="img-fluid mx-auto"
+                    <img src="Images/realme.png" class="card-img-top p-4" style="height:230px;object-fit:contain;">
 
-style="height:180px;object-fit:contain;">
+                    <div class="card-body text-center">
 
-<h4 class="mt-3">
+                        <h5 class="fw-bold">
+                            Realme P3 5G
+                        </h5>
 
-Smart TVs
+                        <p class="text-muted">
+                            6GB RAM | 128GB
+                        </p>
 
-</h4>
+                        <h4 class="text-success">
+                            ₹18,999
+                        </h4>
 
-<p>
+                        <small class="text-decoration-line-through text-secondary">
+                            ₹21,999
+                        </small>
 
-Ultra HD 4K TVs
+                       <div class="d-grid gap-2 mt-3">
 
-</p>
+<button
+class="btn btn-warning"
+onclick="addToCart(2)">
 
-<a href="Tvs.html"
-
-class="btn btn-primary">
-
-Explore
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= FEATURED MOBILES ================= -->
-
-<section class="container py-5">
-
-<div class="d-flex justify-content-between align-items-center mb-4">
-
-<h2 class="fw-bold">🔥 Best Deals on Smartphones</h2>
-
-<a href="mobiles.html" class="btn btn-outline-primary">
-View All
-</a>
-
-</div>
-
-<div class="row g-4">
-
-<!-- Product 1 -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card h-100 shadow border-0 product-card">
-
-<span class="badge bg-danger position-absolute m-3">
-20% OFF
-</span>
-
-<img src="Images/iphone.avif"
-class="card-img-top p-4"
-style="height:250px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Apple iPhone 13
-</h5>
-
-<p class="text-muted">
-128GB | Starlight
-</p>
-
-<h4 class="text-success">
-₹49,999
-</h4>
-
-<small class="text-decoration-line-through text-secondary">
-₹59,999
-</small>
-
-<div class="mt-3">
-
-<a href="mobiles.html"
-class="btn btn-primary w-100">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 2 -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card h-100 shadow border-0 product-card">
-
-<span class="badge bg-success position-absolute m-3">
-NEW
-</span>
-
-<img src="Images/realme.png"
-class="card-img-top p-4"
-style="height:250px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Realme P3 5G
-</h5>
-
-<p class="text-muted">
-6GB RAM | 128GB
-</p>
-
-<h4 class="text-success">
-₹18,999
-</h4>
-
-<small class="text-decoration-line-through text-secondary">
-₹21,999
-</small>
-
-<div class="mt-3">
-
-<a href="mobiles.html"
-class="btn btn-primary w-100">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 3 -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card h-100 shadow border-0 product-card">
-
-<span class="badge bg-warning text-dark position-absolute m-3">
-BEST SELLER
-</span>
-
-<img src="Images/redme.png"
-class="card-img-top p-4"
-style="height:250px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Redmi Note 13
-</h5>
-
-<p class="text-muted">
-8GB RAM | 256GB
-</p>
-
-<h4 class="text-success">
-₹22,999
-</h4>
-
-<small class="text-decoration-line-through text-secondary">
-₹26,999
-</small>
-
-<div class="mt-3">
-
-<a href="mobiles.html"
-class="btn btn-primary w-100">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 4 -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card h-100 shadow border-0 product-card">
-
-<span class="badge bg-primary position-absolute m-3">
-HOT
-</span>
-
-<img src="Images/moto.png"
-class="card-img-top p-4"
-style="height:250px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Motorola Edge 50
-</h5>
-
-<p class="text-muted">
-8GB RAM | 128GB
-</p>
-
-<h4 class="text-success">
-₹27,999
-</h4>
-
-<small class="text-decoration-line-through text-secondary">
-₹31,999
-</small>
-
-<div class="mt-3">
-
-<a href="mobiles.html"
-class="btn btn-primary w-100">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= LAPTOP SECTION ================= -->
-
-<section class="container py-5">
-
-<div class="d-flex justify-content-between align-items-center mb-4">
-
-<h2 class="fw-bold">
-💻 Premium Laptops
-</h2>
-
-<a href="laptops.html" class="btn btn-outline-primary">
-View All
-</a>
-
-</div>
-
-<div class="row g-4">
-
-<!-- HP -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-danger position-absolute m-3">
-15% OFF
-</span>
-
-<img src="Images/Hp.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-HP Intel Core i7
-</h5>
-
-<p class="text-muted">
-13th Gen • 16GB RAM
-</p>
-
-<h4 class="text-success">
-₹69,999
-</h4>
-
-<small class="text-decoration-line-through">
-₹79,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="laptops.html"
-class="btn btn-primary w-100 mt-3">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Infinix -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-success position-absolute m-3">
-NEW
-</span>
-
-<img src="Images/infinix.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Infinix GT Book
-</h5>
-
-<p class="text-muted">
-Intel Core i5
-</p>
-
-<h4 class="text-success">
-₹52,999
-</h4>
-
-<small class="text-decoration-line-through">
-₹59,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★☆
-</div>
-
-<a href="laptops.html"
-class="btn btn-primary w-100 mt-3">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Acer -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-warning text-dark position-absolute m-3">
-BEST
-</span>
-
-<img src="Images/acer.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-Acer Aspire 7
-</h5>
-
-<p class="text-muted">
-Gaming Laptop
-</p>
-
-<h4 class="text-success">
-₹63,999
-</h4>
-
-<small class="text-decoration-line-through">
-₹71,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="laptops.html"
-class="btn btn-primary w-100 mt-3">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ASUS -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-primary position-absolute m-3">
-HOT
-</span>
-
-<img src="Images/asus.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">
-ASUS ROG
-</h5>
-
-<p class="text-muted">
-Ryzen 9 • Gaming
-</p>
-
-<h4 class="text-success">
-₹99,999
-</h4>
-
-<small class="text-decoration-line-through">
-₹1,12,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="laptops.html"
-class="btn btn-primary w-100 mt-3">
-
-Buy Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- OFFER BANNER -->
-
-<section class="container my-5">
-
-<div class="bg-primary rounded-4 text-white p-5 text-center shadow">
-
-<h2 class="fw-bold">
-Mega Electronics Sale
-</h2>
-
-<p class="lead">
-
-Save up to <strong>70% OFF</strong> on Mobiles, Laptops & Smart TVs.
-
-</p>
-
-<a href="mobiles.html"
-class="btn btn-warning btn-lg mt-3">
-
-Shop Now
-
-</a>
-
-</div>
-
-</section>
-<!-- ================= SMART TV SECTION ================= -->
-
-<section class="container py-5">
-
-<div class="d-flex justify-content-between align-items-center mb-4">
-
-<h2 class="fw-bold">
-📺 Best Smart TVs
-</h2>
-
-<a href="Tvs.html" class="btn btn-outline-primary">
-View All
-</a>
-
-</div>
-
-<div class="row g-4">
-
-<!-- Panasonic -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-danger position-absolute m-3">
-25% OFF
-</span>
-
-<img src="Images/panasonic.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">Panasonic 55"</h5>
-
-<p class="text-muted">
-Ultra HD 4K Google TV
-</p>
-
-<h4 class="text-success">₹42,999</h4>
-
-<small class="text-decoration-line-through">
-₹55,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="Tvs.html" class="btn btn-primary w-100 mt-3">
-Buy Now
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Samsung -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-success position-absolute m-3">
-NEW
-</span>
-
-<img src="Images/samsung.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">Samsung QLED</h5>
-
-<p class="text-muted">
-Vision AI Smart TV
-</p>
-
-<h4 class="text-success">₹59,999</h4>
-
-<small class="text-decoration-line-through">
-₹72,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="Tvs.html" class="btn btn-primary w-100 mt-3">
-Buy Now
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Xiaomi -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-warning text-dark position-absolute m-3">
-BEST
-</span>
-
-<img src="Images/xiaomi.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">Xiaomi Fire TV</h5>
-
-<p class="text-muted">
-43 Inch 4K Smart TV
-</p>
-
-<h4 class="text-success">₹28,999</h4>
-
-<small class="text-decoration-line-through">
-₹34,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★☆
-</div>
-
-<a href="Tvs.html" class="btn btn-primary w-100 mt-3">
-Buy Now
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- LG -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card product-card h-100 shadow border-0">
-
-<span class="badge bg-primary position-absolute m-3">
-HOT
-</span>
-
-<img src="Images/LG.webp"
-class="card-img-top p-4"
-style="height:230px;object-fit:contain;">
-
-<div class="card-body text-center">
-
-<h5 class="fw-bold">LG Smart TV</h5>
-
-<p class="text-muted">
-WebOS HD Ready
-</p>
-
-<h4 class="text-success">₹21,999</h4>
-
-<small class="text-decoration-line-through">
-₹27,999
-</small>
-
-<div class="text-warning mt-2">
-★★★★★
-</div>
-
-<a href="Tvs.html" class="btn btn-primary w-100 mt-3">
-Buy Now
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= NEWSLETTER ================= -->
-
-<section class="container py-5">
-
-<div class="bg-dark text-white rounded-4 p-5 text-center shadow">
-
-<h2 class="fw-bold">
-Subscribe to SmartzMart
-</h2>
-
-<p class="mb-4">
-
-Get the latest offers, new arrivals and exclusive discounts directly in your inbox.
-
-</p>
-
-<div class="row justify-content-center">
-
-<div class="col-lg-6">
-
-<div class="input-group">
-
-<input
-type="email"
-class="form-control"
-placeholder="Enter your email">
-
-<button class="btn btn-warning">
-
-Subscribe
+🛒 Add to Cart
 
 </button>
 
-</div>
+<a
+href="mobiles.html"
+class="btn btn-outline-primary">
+
+View Details
+
+</a>
 
 </div>
 
-</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow border-0 product-card">
+
+                    <span class="badge bg-warning text-dark position-absolute m-3">
+                        BEST SELLER
+                    </span>
+
+                    <img src="Images/redme.png" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            Redmi Note 13
+                        </h5>
+
+                        <p class="text-muted">
+                            8GB RAM | 256GB
+                        </p>
+
+                        <h4 class="text-success">
+                            ₹22,999
+                        </h4>
+
+                        <small class="text-decoration-line-through text-secondary">
+                            ₹26,999
+                        </small>
+
+                        <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(3)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="mobiles.html"
+class="btn btn-outline-primary">
+
+View Details
+
+</a>
 
 </div>
+                    </div>
 
-</section>
+                </div>
 
-<!-- ================= FOOTER ================= -->
+            </div>
 
-<footer class="bg-dark text-white pt-5">
+            <!-- Product 4 -->
 
-<div class="container">
+            <div class="col-lg-3 col-md-6">
 
-<div class="row">
+                <div class="card h-100 shadow border-0 product-card">
 
-<div class="col-lg-4">
+                    <span class="badge bg-primary position-absolute m-3">
+                        HOT
+                    </span>
 
-<h3 class="text-warning">
-SmartzMart
-</h3>
+                    <img src="Images/moto.png" class="card-img-top p-4" style="height:230px;object-fit:contain;">
 
-<p>
+                    <div class="card-body text-center">
 
-Your trusted online shopping destination for Mobiles, Laptops, Smart TVs and Electronics.
+                        <h5 class="fw-bold">
+                            Motorola Edge 50
+                        </h5>
 
-</p>
+                        <p class="text-muted">
+                            8GB RAM | 128GB
+                        </p>
 
-</div>
+                        <h4 class="text-success">
+                            ₹27,999
+                        </h4>
 
-<div class="col-lg-2">
+                        <small class="text-decoration-line-through text-secondary">
+                            ₹31,999
+                        </small>
 
-<h5>Quick Links</h5>
+                       <div class="d-grid gap-2 mt-3">
 
-<ul class="list-unstyled">
+<button
+class="btn btn-warning"
+onclick="addToCart(4)">
 
-<li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+🛒 Add to Cart
 
-<li><a href="mobiles.html" class="text-white text-decoration-none">Mobiles</a></li>
+</button>
 
-<li><a href="laptops.html" class="text-white text-decoration-none">Laptops</a></li>
+<a
+href="mobiles.html"
+class="btn btn-outline-primary">
 
-<li><a href="Tvs.html" class="text-white text-decoration-none">Smart TVs</a></li>
+View Details
 
-</ul>
-
-</div>
-
-<div class="col-lg-3">
-
-<h5>Customer Support</h5>
-
-<ul class="list-unstyled">
-
-<li><a href="Support.html" class="text-white text-decoration-none">Support</a></li>
-
-<li><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
-
-<li>Privacy Policy</li>
-
-<li>Terms & Conditions</li>
-
-</ul>
+</a>
 
 </div>
 
-<div class="col-lg-3">
+                    </div>
 
-<h5>Contact</h5>
+                </div>
 
-<p>📧 sanketghayal3@gmail.com</p>
+            </div>
 
-<p>📞 +91 8605455827</p>
+        </div>
 
-<p>📍 Pune, Maharashtra</p>
+    </section>
+    <!-- ================= LAPTOP SECTION ================= -->
+
+    <section class="container py-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h2 class="fw-bold">
+                💻 Premium Laptops
+            </h2>
+
+            <a href="laptops.html" class="btn btn-outline-primary">
+                View All
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- HP -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-danger position-absolute m-3">
+                        15% OFF
+                    </span>
+
+                    <img src="Images/Hp.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            HP Intel Core i7
+                        </h5>
+
+                        <p class="text-muted">
+                            13th Gen • 16GB RAM
+                        </p>
+
+                        <h4 class="text-success">
+                            ₹69,999
+                        </h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹79,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                      <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(25)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
 
 </div>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Infinix -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-success position-absolute m-3">
+                        NEW
+                    </span>
+
+                    <img src="Images/infinix.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            Infinix GT Book
+                        </h5>
+
+                        <p class="text-muted">
+                            Intel Core i5
+                        </p>
+
+                        <h4 class="text-success">
+                            ₹52,999
+                        </h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹59,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★☆
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(26)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
 </div>
 
-<hr>
+                    </div>
 
-<div class="text-center pb-3">
+                </div>
 
-© 2026 SmartzMart. All Rights Reserved.
+            </div>
+
+            <!-- Acer -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-warning text-dark position-absolute m-3">
+                        BEST
+                    </span>
+
+                    <img src="Images/acer.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            Acer Aspire 7
+                        </h5>
+
+                        <p class="text-muted">
+                            Gaming Laptop
+                        </p>
+
+                        <h4 class="text-success">
+                            ₹63,999
+                        </h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹71,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(27)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
 
 </div>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ASUS -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-primary position-absolute m-3">
+                        HOT
+                    </span>
+
+                    <img src="Images/asus.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">
+                            ASUS ROG
+                        </h5>
+
+                        <p class="text-muted">
+                            Ryzen 9 • Gaming
+                        </p>
+
+                        <h4 class="text-success">
+                            ₹99,999
+                        </h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹1,12,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                       <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(28)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
 </div>
 
-</footer>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+                    </div>
 
-<!-- Scroll fade-in animation -->
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
+                </div>
 
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OFFER BANNER -->
+
+    <section class="container my-5">
+
+        <div class="bg-primary rounded-4 text-white p-5 text-center shadow">
+
+            <h2 class="fw-bold">
+                Mega Electronics Sale
+            </h2>
+
+            <p class="lead">
+
+                Save up to <strong>70% OFF</strong> on Mobiles, Laptops & Smart TVs.
+
+            </p>
+
+            <a href="mobiles.html" class="btn btn-warning btn-lg mt-3">
+
+                Shop Now
+
+            </a>
+
+        </div>
+
+    </section>
+    <!-- ================= SMART TV SECTION ================= -->
+
+    <section class="container py-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h2 class="fw-bold">
+                📺 Best Smart TVs
+            </h2>
+
+            <a href="Tvs.html" class="btn btn-outline-primary">
+                View All
+            </a>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Panasonic -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-danger position-absolute m-3">
+                        25% OFF
+                    </span>
+
+                    <img src="Images/panasonic.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">Panasonic 55"</h5>
+
+                        <p class="text-muted">
+                            Ultra HD 4K Google TV
+                        </p>
+
+                        <h4 class="text-success">₹42,999</h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹55,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                       <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(29)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Samsung -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-success position-absolute m-3">
+                        NEW
+                    </span>
+
+                    <img src="Images/samsung.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">Samsung QLED</h5>
+
+                        <p class="text-muted">
+                            Vision AI Smart TV
+                        </p>
+
+                        <h4 class="text-success">₹59,999</h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹72,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(30)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Xiaomi -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-warning text-dark position-absolute m-3">
+                        BEST
+                    </span>
+
+                    <img src="Images/xiaomi.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">Xiaomi Fire TV</h5>
+
+                        <p class="text-muted">
+                            43 Inch 4K Smart TV
+                        </p>
+
+                        <h4 class="text-success">₹28,999</h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹34,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★☆
+                        </div>
+
+                      <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(31)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- LG -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card product-card h-100 shadow border-0">
+
+                    <span class="badge bg-primary position-absolute m-3">
+                        HOT
+                    </span>
+
+                    <img src="Images/LG.webp" class="card-img-top p-4" style="height:230px;object-fit:contain;">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="fw-bold">LG Smart TV</h5>
+
+                        <p class="text-muted">
+                            WebOS HD Ready
+                        </p>
+
+                        <h4 class="text-success">₹21,999</h4>
+
+                        <small class="text-decoration-line-through">
+                            ₹27,999
+                        </small>
+
+                        <div class="text-warning mt-2">
+                            ★★★★★
+                        </div>
+
+                        <div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(32)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="laptops.html"
+class="btn btn-primary">
+
+View Details
+
+</a>
+
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="container py-5">
+
+        <div class="bg-dark text-white rounded-4 p-5 text-center shadow">
+
+            <h2 class="fw-bold">
+                Subscribe to SmartzMart
+            </h2>
+
+            <p class="mb-4">
+
+                Get the latest offers, new arrivals and exclusive discounts directly in your inbox.
+
+            </p>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6">
+
+                    <div class="input-group">
+
+                        <input type="email" class="form-control" placeholder="Enter your email">
+
+                        <button class="btn btn-warning">
+
+                            Subscribe
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white pt-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <h3 class="text-warning">
+                        SmartzMart
+                    </h3>
+
+                    <p>
+
+                        Your trusted online shopping destination for Mobiles, Laptops, Smart TVs and Electronics.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                    <h5>Quick Links</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+
+                        <li><a href="mobiles.html" class="text-white text-decoration-none">Mobiles</a></li>
+
+                        <li><a href="laptops.html" class="text-white text-decoration-none">Laptops</a></li>
+
+                        <li><a href="Tvs.html" class="text-white text-decoration-none">Smart TVs</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5>Customer Support</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li><a href="Support.html" class="text-white text-decoration-none">Support</a></li>
+
+                        <li><a href="Contact.html" class="text-white text-decoration-none">Contact</a></li>
+
+                        <li>Privacy Policy</li>
+
+                        <li>Terms & Conditions</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5>Contact</h5>
+
+                    <p>📧 sanketghayal3@gmail.com</p>
+
+                    <p>📞 +91 8605455827</p>
+
+                    <p>📍 Pune, Maharashtra</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center pb-3">
+
+                © 2026 SmartzMart. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll fade-in animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -59,15 +59,29 @@
             </ul>
 
             <!-- Search -->
-            <form class="d-flex">
-                <input class="form-control me-2"
+            <form class="d-flex" onsubmit="return false;">
+                <input id="searchInput" class="form-control me-2"
                     type="search"
-                    placeholder="Search Products">
+                    placeholder="Search Products"
+                    onkeyup="searchProducts()">
 
-                <button class="btn btn-warning">
+                <button class="btn btn-warning" type="submit">
                     Search
                 </button>
             </form>
+
+            <a href="cart.html" class="btn btn-outline-warning ms-3 position-relative">
+
+                🛒 Cart
+
+                <span id="cartCount"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                    0
+
+                </span>
+
+            </a>
 
         </div>
     </div>
@@ -279,7 +293,7 @@ Apply Filter
 
 <section class="container py-4" id="products">
 
-<div class="row g-4"><body>
+<div class="row g-4">
 
 
 <!-- ================= PRODUCT 1 ================= -->
@@ -318,9 +332,26 @@ Apple iPhone 13
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/apple-iphone-13-starlight-128-gb/p/itmc9604f122ae7f?pid=MOBG6VF5ADKHKXFX&lid=LSTMOBG6VF5ADKHKXFXQGX7PK&marketplace=FLIPKART&q=Apple+iPhone+13+&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=2d358818-4a57-423c-b207-e7ce154ed267.MOBG6VF5ADKHKXFX.SEARCH&ppt=sp&ppn=sp&ssid=pz8plkgwkakc5n281782837620885&qH=719d0ef3c0c3df3d&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(1)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://www.flipkart.com/search?q=apple+iphone+13"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
+
+</div>
 
 </div>
 
@@ -364,9 +395,26 @@ Realme P3 5G
 ★★★★☆
 </div>
 
-<a href="https://dl.flipkart.com/dl/realme-p3-ultra-5g-neptune-blue-128-gb/p/itm50171223b4a05?pid=MOBHAYKEXWW5SW5B&lid=LSTMOBHAYKEXWW5SW5BD6JPGU&marketplace=FLIPKART&q=Realme+P3+5G+&store=tyy/4io&srno=s_1_7&otracker=search&otracker1=search&fm=Search&iid=119396fe-e4d2-45ac-ac71-27664112ca34.MOBHAYKEXWW5SW5B.SEARCH&ppt=sp&ppn=sp&ssid=dyyz2n72n89bxszk1782837540590&qH=8afa9ea42ac9fd9a&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(2)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://www.flipkart.com/search?q=realme+p3+5g"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
+
+</div>
 
 </div>
 
@@ -410,9 +458,26 @@ Redmi Note 13 Pro
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/redmi-note-13-pro-5g-coral-purple-256-gb/p/itm0267c1add6203?pid=MOBGZF9PYZ6BG9DD&lid=LSTMOBGZF9PYZ6BG9DD5KCEB2&marketplace=FLIPKART&q=Redmi+Note+13+Pro+&store=tyy/4io&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=faabb51d-9954-40d9-83a8-34e4a490e03e.MOBGZF9PYZ6BG9DD.SEARCH&ppt=sp&ppn=sp&ssid=qi3axvao90pdyhvk1782837487348&qH=427f9b29db25f0a2&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(3)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://www.flipkart.com/search?q=redmi+note+13"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
+
+</div>
 
 </div>
 
@@ -456,9 +521,26 @@ Motorola Edge 50
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/motorola-edge-50-pro-5g-125w-charger-caneel-bay-256-gb/p/itm1603f674e2178?pid=MOBH2YWHMKHAFHZF&lid=LSTMOBH2YWHMKHAFHZFYIJTF0&marketplace=FLIPKART&q=+Motorola+Edge+50+&store=tyy/4io&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=60e0deda-3c06-4fb7-bd05-b120d7e99622.MOBH2YWHMKHAFHZF.SEARCH&ppt=sp&ppn=sp&ssid=jf63w682347lppts1782837439868&qH=5117e56beb924eb1&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(4)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://www.flipkart.com/search?q=motorola+edge+50"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
+
+</div>
 
 </div>
 
@@ -494,9 +576,26 @@ Vivo V50
 ★★★★☆
 </div>
 
-<a href="https://dl.flipkart.com/dl/vivo-v50-5g-starry-night-256-gb/p/itm12bbdca230795?pid=MOBHFG92FAGVZA2P&lid=LSTMOBHFG92FAGVZA2PLP5U2G&marketplace=FLIPKART&q=Vivo+V50+&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=042100a4-6fb6-4a91-ba9c-e8fb40903226.MOBHFG92FAGVZA2P.SEARCH&ppt=sp&ppn=sp&ssid=0dxwg7x881pky70g1782837391489&qH=b344293eb05404f0&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(5)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://dl.flipkart.com/dl/vivo-v50-5g-starry-night-256-gb/p/itm12bbdca230795?pid=MOBHFG92FAGVZA2P&lid=LSTMOBHFG92FAGVZA2PLP5U2G&marketplace=FLIPKART&q=Vivo+V50+&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=042100a4-6fb6-4a91-ba9c-e8fb40903226.MOBHFG92FAGVZA2P.SEARCH&ppt=sp&ppn=sp&ssid=0dxwg7x881pky70g1782837391489&qH=b344293eb05404f0&ov_redirect=true&_refId=&_appId=CL"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
+
+</div>
 
 </div>
 
@@ -532,10 +631,26 @@ Oppo Reno 13
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/oppo-reno13-5g-ivory-white-128-gb/p/itmf0b823e5bcb9d?pid=MOBH92AGMVMEPZWJ&lid=LSTMOBH92AGMVMEPZWJSR23ML&marketplace=FLIPKART&q=Oppo+Reno+13++&store=tyy/4io&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=62739dbf-e15a-420b-8332-976834812b5c.MOBH92AGMVMEPZWJ.SEARCH&ppt=sp&ppn=sp&ssid=2ascrflspyleu0hs1782837342683&qH=c219b347fcf29d3a&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(6)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://dl.flipkart.com/dl/oppo-reno13-5g-ivory-white-128-gb/p/itmf0b823e5bcb9d?pid=MOBH92AGMVMEPZWJ&lid=LSTMOBH92AGMVMEPZWJSR23ML&marketplace=FLIPKART&q=Oppo+Reno+13++&store=tyy/4io&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=62739dbf-e15a-420b-8332-976834812b5c.MOBH92AGMVMEPZWJ.SEARCH&ppt=sp&ppn=sp&ssid=2ascrflspyleu0hs1782837342683&qH=c219b347fcf29d3a&ov_redirect=true&_refId=&_appId=CL"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
 
+</div>
 </div>
 
 </div>
@@ -570,10 +685,26 @@ OnePlus Nord 4
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/oneplus-nord-4-5g-oasis-green-256-gb/p/itmed83e7926e3e5?pid=MOBH3YA8ZFTVSREP&lid=LSTMOBH3YA8ZFTVSREPHKADS9&marketplace=FLIPKART&q=OnePlus+Nord+4&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=7aba2ae0-22d4-41c7-b57c-d0901bfc84fb.MOBH3YA8ZFTVSREP.SEARCH&ppt=sp&ppn=sp&ssid=m6svsv8ay5s2cmps1782836917908&qH=854517925bdc10a2&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(7)">
+
+🛒 Add to Cart
+
+</button>
+
+<a
+href="https://dl.flipkart.com/dl/oneplus-nord-4-5g-oasis-green-256-gb/p/itmed83e7926e3e5?pid=MOBH3YA8ZFTVSREP&lid=LSTMOBH3YA8ZFTVSREPHKADS9&marketplace=FLIPKART&q=OnePlus+Nord+4&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=7aba2ae0-22d4-41c7-b57c-d0901bfc84fb.MOBH3YA8ZFTVSREP.SEARCH&ppt=sp&ppn=sp&ssid=m6svsv8ay5s2cmps1782836917908&qH=854517925bdc10a2&ov_redirect=true&_refId=&_appId=CL"
+target="_blank"
+class="btn btn-primary">
+
+🛍 Buy Now
+
 </a>
 
+</div>
 </div>
 
 </div>
@@ -608,9 +739,21 @@ Samsung Galaxy S24
 ★★★★★
 </div>
 
-<a href="https://dl.flipkart.com/dl/samsung-galaxy-s24-5g-snapdragon-marble-gray-256-gb/p/itmc60e0c4fb63b7?pid=MOBHDVFKAWDVHJTU&lid=LSTMOBHDVFKAWDVHJTUK7PT9L&marketplace=FLIPKART&q=Samsung+Galaxy+S24+&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=60e864af-37fa-41d3-9602-d568f940167a.MOBHDVFKAWDVHJTU.SEARCH&ppt=sp&ppn=sp&ssid=yr0zetov0vyhnaww1782837218268&qH=42f3944f9b19ec46&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-Buy Now
+<div class="d-grid gap-2 mt-3">
+
+<button
+class="btn btn-warning"
+onclick="addToCart(8)">
+
+🛒 Add to Cart
+
+</button>
+
+<a href="https://dl.flipkart.com/dl/samsung-galaxy-s24-5g-snapdragon-marble-gray-256-gb/p/itmc60e0c4fb63b7?pid=MOBHDVFKAWDVHJTU&lid=LSTMOBHDVFKAWDVHJTUK7PT9L&marketplace=FLIPKART&q=Samsung+Galaxy+S24+&store=tyy/4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=60e864af-37fa-41d3-9602-d568f940167a.MOBHDVFKAWDVHJTU.SEARCH&ppt=sp&ppn=sp&ssid=yr0zetov0vyhnaww1782837218268&qH=42f3944f9b19ec46&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+🛍 Buy Now
 </a>
+
+</div>
 
 </div>
 
@@ -848,13 +991,11 @@ Contact
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
 <script>
-const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting){el.target.classList.add("visible");obs.unobserve(el.target);}},{threshold:0.1});
+const obs=new IntersectionObserver((entries)=>{entries.forEach(el=>{if(el.isIntersecting){el.target.classList.add("visible");obs.unobserve(el.target);}});},{threshold:0.1});
 document.querySelectorAll(".brand-section").forEach(el=>obs.observe(el));
 </script>
+<script src="products.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

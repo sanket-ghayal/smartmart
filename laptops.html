@@ -62,15 +62,29 @@
             </ul>
 
             <!-- Search -->
-            <form class="d-flex">
-                <input class="form-control me-2"
+            <form class="d-flex" onsubmit="return false;">
+                <input id="searchInput" class="form-control me-2"
                     type="search"
-                    placeholder="Search Products">
+                    placeholder="Search Products"
+                    onkeyup="searchProducts()">
 
-                <button class="btn btn-warning">
+                <button class="btn btn-warning" type="submit">
                     Search
                 </button>
             </form>
+
+            <a href="cart.html" class="btn btn-outline-warning ms-3 position-relative">
+
+                🛒 Cart
+
+                <span id="cartCount"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                    0
+
+                </span>
+
+            </a>
 
         </div>
     </div>
@@ -330,9 +344,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/hp-pavilion-plus-creator-oled-eyesafe-h-series-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-14-eh0024tu-thin-light-laptop/p/itm4aaa3f48f218c?pid=COMGHMH6GYGRH5BU&q=HP+Pavilion+i7+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=e3721866-f6e1-44a4-8448-a29fc9366758.COMGHMH6GYGRH5BU.SEARCH&ppt=sp&ppn=sp&ssid=3c0q4uk1qk73b2f41782838987883&qH=2a3af48be720322a&ov_redirect=true&lid=LSTCOMGHMH6GYGRH5BUOAGBSM&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(9)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/hp-pavilion-plus-creator-oled-eyesafe-h-series-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-14-eh0024tu-thin-light-laptop/p/itm4aaa3f48f218c?pid=COMGHMH6GYGRH5BU&q=HP+Pavilion+i7+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=search-autosuggest&iid=e3721866-f6e1-44a4-8448-a29fc9366758.COMGHMH6GYGRH5BU.SEARCH&ppt=sp&ppn=sp&ssid=3c0q4uk1qk73b2f41782838987883&qH=2a3af48be720322a&ov_redirect=true&lid=LSTCOMGHMH6GYGRH5BUOAGBSM&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -374,9 +393,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/asus-rog-strix-g16-2026-amd-ryzen-9-16-core-8940hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-5050-165-hz-g614ph-rv073ws-gaming-laptop/p/itm79a5501cd2465?pid=COMHMARKFTZY9ZHE&lid=LSTCOMHMARKFTZY9ZHEVOW8OP&marketplace=FLIPKART&q=SUS+ROG+&store=4rr/tz1&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=58a44815-cdda-4b15-822e-dc8a8febd977.COMHMARKFTZY9ZHE.SEARCH&ppt=sp&ppn=sp&ssid=jcob9eyjn2l18hkw1782839030965&qH=c1962724498aae9f&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(10)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/asus-rog-strix-g16-2026-amd-ryzen-9-16-core-8940hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-5050-165-hz-g614ph-rv073ws-gaming-laptop/p/itm79a5501cd2465?pid=COMHMARKFTZY9ZHE&lid=LSTCOMHMARKFTZY9ZHEVOW8OP&marketplace=FLIPKART&q=SUS+ROG+&store=4rr/tz1&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=58a44815-cdda-4b15-822e-dc8a8febd977.COMHMARKFTZY9ZHE.SEARCH&ppt=sp&ppn=sp&ssid=jcob9eyjn2l18hkw1782839030965&qH=c1962724498aae9f&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -418,9 +442,14 @@
                 ★★★★☆
             </div>
 
-            <a href="https://dl.flipkart.com/dl/acer-aspire-7-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-a715-79g-gaming-laptop/p/itm8875899548153?pid=COMHEYV9HG3USKPH&lid=LSTCOMHEYV9HG3USKPH3TQAHT&marketplace=FLIPKART&q=Acer+Aspire+7+&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=6f993aec-c1d9-4682-9f02-cf6ef8bf45ee.COMHEYV9HG3USKPH.SEARCH&ppt=sp&ppn=sp&ssid=e16ttlu4qck5xf5s1782839079042&qH=0b81e6c2b9516b15&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(11)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/acer-aspire-7-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-a715-79g-gaming-laptop/p/itm8875899548153?pid=COMHEYV9HG3USKPH&lid=LSTCOMHEYV9HG3USKPH3TQAHT&marketplace=FLIPKART&q=Acer+Aspire+7+&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=6f993aec-c1d9-4682-9f02-cf6ef8bf45ee.COMHEYV9HG3USKPH.SEARCH&ppt=sp&ppn=sp&ssid=e16ttlu4qck5xf5s1782839079042&qH=0b81e6c2b9516b15&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -462,9 +491,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44JRG3NJ2V&lid=LSTCOMHYS44JRG3NJ2VXWCETL&marketplace=FLIPKART&q=Infinix+GT+Book+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=423e84f7-22a8-410d-84d6-424b3ff58696.COMHYS44JRG3NJ2V.SEARCH&ppt=sp&ppn=sp&ssid=vhicp5wtqwi2gg741782839116609&qH=004f7a024cda67ea&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(12)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/infinix-gt-book-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-3050-80-w-gl613-gaming-laptop/p/itmc9e44d5a9f6c4?pid=COMHYS44JRG3NJ2V&lid=LSTCOMHYS44JRG3NJ2VXWCETL&marketplace=FLIPKART&q=Infinix+GT+Book+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=423e84f7-22a8-410d-84d6-424b3ff58696.COMHYS44JRG3NJ2V.SEARCH&ppt=sp&ppn=sp&ssid=vhicp5wtqwi2gg741782839116609&qH=004f7a024cda67ea&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -497,9 +531,14 @@
                 ★★★★☆
             </div>
 
-            <a href="https://dl.flipkart.com/dl/dell-inspiron-15-3520-backlit-keyboard-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-laptop/p/itm0c93229d052fe?pid=COMGTEGW6HF5GJGQ&lid=LSTCOMGTEGW6HF5GJGQT5MCQF&marketplace=FLIPKART&q=Dell+Inspiron+15&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=90b1c546-c106-4afb-a36f-7614ae12de4e.COMGTEGW6HF5GJGQ.SEARCH&ppt=sp&ppn=sp&ssid=3uml73x4uta6regw1782838717856&qH=c1652a3b6818421d&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(13)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/dell-inspiron-15-3520-backlit-keyboard-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-laptop/p/itm0c93229d052fe?pid=COMGTEGW6HF5GJGQ&lid=LSTCOMGTEGW6HF5GJGQT5MCQF&marketplace=FLIPKART&q=Dell+Inspiron+15&store=6bo/b5g&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=90b1c546-c106-4afb-a36f-7614ae12de4e.COMGTEGW6HF5GJGQ.SEARCH&ppt=sp&ppn=sp&ssid=3uml73x4uta6regw1782838717856&qH=c1652a3b6818421d&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -533,9 +572,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/lenovo-ideapad-slim-5-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-16iah8-laptop/p/itma68dba42368d2?pid=COMGTYDGGUKCDA8D&lid=LSTCOMGTYDGGUKCDA8DRVP3PP&marketplace=FLIPKART&q=Lenovo+IdeaPad+Slim+5&store=6bo/b5g&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=cd834f9d-ba21-4a59-a345-d3dd4875d79a.COMGTYDGGUKCDA8D.SEARCH&ppt=sp&ppn=sp&ssid=g1ongw3oe8o8lwjk1782838672740&qH=b083d83cb3946db3&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(14)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/lenovo-ideapad-slim-5-intel-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-16iah8-laptop/p/itma68dba42368d2?pid=COMGTYDGGUKCDA8D&lid=LSTCOMGTYDGGUKCDA8DRVP3PP&marketplace=FLIPKART&q=Lenovo+IdeaPad+Slim+5&store=6bo/b5g&srno=s_1_10&otracker=search&otracker1=search&fm=Search&iid=cd834f9d-ba21-4a59-a345-d3dd4875d79a.COMGTYDGGUKCDA8D.SEARCH&ppt=sp&ppn=sp&ssid=g1ongw3oe8o8lwjk1782838672740&qH=b083d83cb3946db3&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -569,9 +613,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/msi-thin-15-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-45-w-b13ve-gaming-laptop/p/itm8084b0b7961d4?pid=COMHCQ4TFPZPJKMY&lid=LSTCOMHCQ4TFPZPJKMYC4TKBI&marketplace=FLIPKART&q=MSI+Thin+15+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6abcb1d3-d01a-417a-bfb6-e10c7890b8d8.COMHCQ4TFPZPJKMY.SEARCH&ppt=sp&ppn=sp&ssid=n8b5nqww1e4cnjsw1782838627589&qH=1d96199ab3aca28f&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(15)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/msi-thin-15-intel-core-i7-13th-gen-13620h-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-144-hz-45-w-b13ve-gaming-laptop/p/itm8084b0b7961d4?pid=COMHCQ4TFPZPJKMY&lid=LSTCOMHCQ4TFPZPJKMYC4TKBI&marketplace=FLIPKART&q=MSI+Thin+15+&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6abcb1d3-d01a-417a-bfb6-e10c7890b8d8.COMHCQ4TFPZPJKMY.SEARCH&ppt=sp&ppn=sp&ssid=n8b5nqww1e4cnjsw1782838627589&qH=1d96199ab3aca28f&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -605,9 +654,14 @@
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/apple-macbook-air-m3-8-gb-256-gb-ssd-macos-sonoma-mrxt3hn-a/p/itm2ea42dec44bca?pid=COMGYP5GGSNGYSZP&lid=LSTCOMGYP5GGSNGYSZPBWPP4V&marketplace=FLIPKART&q=Apple+MacBook+Air+M3&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=fc8cbb26-8be6-41a4-b0ec-402a1f4ed0b8.COMGYP5GGSNGYSZP.SEARCH&ppt=sp&ppn=sp&ssid=qirvhtuwpkbx57281782838534908&qH=ec7ca751cbc5a493&ov_redirect=true&_refId=&_appId=CL" class="btn btn-warning w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(16)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/apple-macbook-air-m3-8-gb-256-gb-ssd-macos-sonoma-mrxt3hn-a/p/itm2ea42dec44bca?pid=COMGYP5GGSNGYSZP&lid=LSTCOMGYP5GGSNGYSZPBWPP4V&marketplace=FLIPKART&q=Apple+MacBook+Air+M3&store=6bo/b5g&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=fc8cbb26-8be6-41a4-b0ec-402a1f4ed0b8.COMGYP5GGSNGYSZP.SEARCH&ppt=sp&ppn=sp&ssid=qirvhtuwpkbx57281782838534908&qH=ec7ca751cbc5a493&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -953,7 +1007,8 @@ behavior:"smooth"
 };
 
 </script>
-
+<script src="products.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

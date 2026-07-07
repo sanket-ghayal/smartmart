@@ -1,28 +1,18 @@
-/*====================================
-        GOOGLE FONT
-====================================*/
+/* ===========================
+   CART PAGE
+=========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
     font-family:'Poppins',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
 }
 
 body{
     background:#f8f9fa;
-    overflow-x:hidden;
 }
 
-/*====================================
-            NAVBAR
-====================================*/
+/* ================= NAVBAR (matches every other page) ================= */
 
 .navbar{
     background:#111827!important;
@@ -78,445 +68,128 @@ body{
     padding:10px 18px;
 }
 
-.btn-warning{
-    border-radius:30px;
-    padding:10px 22px;
-    font-weight:600;
-}
+/* Hero */
 
-/* Cart button in navbar — pill shape, consistent on every page */
-.btn-outline-warning{
-    border-radius:30px;
-}/*====================================
-            HERO
-====================================*/
-
-.contact-hero{
-    background:linear-gradient(135deg,#0d6efd,#001d3d);
+.cart-hero{
+    background:linear-gradient(135deg,#0d6efd,#4dabf7);
     color:#fff;
+    padding:70px 0;
     text-align:center;
-    padding:100px 0;
 }
 
-.contact-hero h1{
-    font-size:55px;
+.cart-hero h1{
     font-weight:700;
 }
 
-.contact-hero p{
-    font-size:20px;
+.cart-hero p{
+    opacity:.9;
+}
+
+/* Table */
+
+.table{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table th{
+    background:#212529;
+    color:#fff;
+    text-align:center;
+}
+
+.table td{
+    vertical-align:middle;
+    text-align:center;
+}
+
+.table img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+/* Coupon */
+
+.input-group .btn{
+    font-weight:600;
+}
+
+/* Summary */
+
+.summary-card strong{
+    font-size:18px;
+}
+
+/* Buttons */
+
+.btn-success{
+    border-radius:30px;
+}
+
+.btn-outline-primary{
+    border-radius:30px;
+}
+
+.btn-outline-warning{
+    border-radius:30px;
+}
+
+/* Features */
+
+.features h1{
+    font-size:50px;
+}
+
+.features h4{
+    font-weight:700;
+}
+
+/* Empty Cart */
+
+.empty-cart{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.empty-cart h2{
     margin-top:20px;
 }
 
-/*====================================
-        CONTACT FORM
-====================================*/
-
-.contact-box{
-    background:#fff;
-    padding:35px;
-    border-radius:20px;
+.empty-cart img{
+    width:250px;
 }
 
-.contact-box h3{
-    font-weight:700;
-    margin-bottom:25px;
-}
-
-.contact-box input,
-.contact-box textarea{
-    border-radius:12px;
-    padding:14px;
-    border:1px solid #ddd;
-    transition:.3s;
-}
-
-.contact-box input:focus,
-.contact-box textarea:focus{
-    border-color:#0d6efd;
-    box-shadow:none;
-}
-
-.contact-box textarea{
-    resize:none;
-}
-
-.contact-box .btn{
-    padding:12px 35px;
-    border-radius:30px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.contact-box .btn:hover{
-    transform:translateY(-3px);
-}
-/*====================================
-        CONTACT INFORMATION
-====================================*/
-
-.contact-info{
-    background:#fff;
-    padding:35px;
-    border-radius:20px;
-    height:100%;
-    transition:.4s;
-}
-
-.contact-info:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 35px rgba(0,0,0,.12)!important;
-}
-
-.contact-info h3{
-    font-weight:700;
-    color:#0d6efd;
-}
-
-.info-item{
-    margin-bottom:25px;
-}
-
-.info-item h5{
-    font-weight:600;
-    margin-bottom:10px;
-    color:#222;
-}
-
-.info-item p{
-    color:#666;
-    line-height:1.8;
-    margin-bottom:0;
-}
-
-.contact-info hr{
-    margin:20px 0;
-}
-
-/*====================================
-        SOCIAL ICONS
-====================================*/
-
-.social-icons{
-    display:flex;
-    gap:15px;
-    margin-top:15px;
-}
-
-.social-icons a{
-    width:45px;
-    height:45px;
-    background:#0d6efd;
-    color:#fff;
-    text-decoration:none;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:20px;
-    transition:.3s;
-}
-
-.social-icons a:hover{
-    background:#ffc107;
-    color:#000;
-    transform:translateY(-5px);
-}
-
-/*====================================
-            GOOGLE MAP
-====================================*/
-
-.map{
-    border-radius:20px;
-    overflow:hidden;
-    transition:.4s;
-}
-
-.map:hover{
-    box-shadow:0 18px 35px rgba(0,0,0,.15)!important;
-}
-
-.map iframe{
-    display:block;
-}
-
-/*====================================
-        FEATURE BOXES
-====================================*/
-
-.feature-box{
-    background:#fff;
-    border-radius:20px;
-    padding:35px 25px;
-    transition:.4s;
-    height:100%;
-}
-
-.feature-box:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 35px rgba(0,0,0,.12)!important;
-}
-
-.feature-box h1{
-    font-size:55px;
-    margin-bottom:20px;
-}
-
-.feature-box h4{
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-.feature-box p{
-    color:#666;
-    line-height:1.7;
-}
-
-/*====================================
-        SECTION SPACING
-====================================*/
-
-section{
-    padding-top:70px;
-    padding-bottom:70px;
-}
-/*====================================
-        NEWSLETTER
-====================================*/
-
-.bg-primary{
-    background:linear-gradient(135deg,#0d6efd,#001d3d)!important;
-}
-
-.bg-primary h2{
-    color:#fff;
-    font-weight:700;
-}
-
-.bg-primary p{
-    color:#f1f1f1;
-}
-
-.input-group input{
-    height:55px;
-    border-radius:35px 0 0 35px;
-    border:none;
-    padding-left:20px;
-}
-
-.input-group input:focus{
-    box-shadow:none;
-}
-
-.input-group .btn{
-    border-radius:0 35px 35px 0;
-    font-weight:600;
-    transition:.3s;
-}
-
-.input-group .btn:hover{
-    transform:translateY(-2px);
-}
-
-/*====================================
-            FOOTER
-====================================*/
-
-footer{
-    background:#111;
-    color:#fff;
-    padding:60px 0 20px;
-}
-
-footer h3,
-footer h5{
-    color:#ffc107;
-    font-weight:700;
-    margin-bottom:20px;
-}
-
-footer p{
-    color:#ccc;
-    line-height:1.8;
-}
-
-footer ul{
-    list-style:none;
-    padding:0;
-}
-
-footer ul li{
-    margin-bottom:10px;
-}
-
-footer ul li a{
-    color:#ddd;
-    text-decoration:none;
-    transition:.3s;
-}
-
-footer ul li a:hover{
-    color:#ffc107;
-    padding-left:6px;
-}
-
-footer hr{
-    border-color:rgba(255,255,255,.15);
-}
-
-/*====================================
-        BACK TO TOP
-====================================*/
-
-#topBtn{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    width:55px;
-    height:55px;
-    display:none;
-    border:none;
-    border-radius:50%;
-    font-size:22px;
-    font-weight:bold;
-    z-index:999;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-    transition:.3s;
-}
-
-#topBtn:hover{
-    transform:translateY(-5px) scale(1.1);
-}
-
-/*====================================
-        SCROLLBAR
-====================================*/
-
-::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#f1f1f1;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#0d6efd;
-    border-radius:10px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:#084298;
-}
-
-/*====================================
-        RESPONSIVE
-====================================*/
-
-@media(max-width:992px){
-
-.contact-hero{
-    padding:80px 0;
-}
-
-.contact-hero h1{
-    font-size:42px;
-}
-
-.contact-info{
-    margin-top:30px;
-}
-
-}
+/* Responsive */
 
 @media(max-width:768px){
 
-.contact-hero{
-    padding:60px 0;
+.table{
+    font-size:14px;
 }
 
-.contact-hero h1{
-    font-size:34px;
+.table img{
+    width:60px;
+    height:60px;
 }
 
-.contact-hero p{
-    font-size:17px;
-}
-
-footer{
-    text-align:center;
-}
-
-footer .col-lg-4,
-footer .col-lg-3,
-footer .col-lg-2{
-    margin-bottom:30px;
-}
-
-.social-icons{
-    justify-content:center;
+.cart-hero{
+    padding:50px 20px;
 }
 
 }
-
-@media(max-width:576px){
-
-.contact-hero h1{
-    font-size:28px;
-}
-
-.contact-hero p{
-    font-size:15px;
-}
-
-.navbar-brand{
-    font-size:24px;
-}
-
-.contact-box,
-.contact-info,
-.feature-box{
-    padding:25px;
-}
-
-.input-group{
-    display:block;
-}
-
-.input-group input{
-    width:100%;
-    border-radius:12px;
-    margin-bottom:10px;
-}
-
-.input-group .btn{
-    width:100%;
-    border-radius:12px;
-}
-
-}
-
-/*====================================
-        REMOVE EXTRA SPACE
-====================================*/
-
-html,
-body{
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    background:#f8f9fa;
-}
-
-footer{
-    margin-bottom:0;
-}
-
-section:last-of-type{
-    margin-bottom:0;
-}
-
 /* =========================================================
    SMARTZMART — SHARED ENHANCEMENTS
    (toast notification, cart badge pulse, scroll reveal)

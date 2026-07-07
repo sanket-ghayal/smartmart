@@ -63,15 +63,29 @@
             </ul>
 
             <!-- Search -->
-            <form class="d-flex">
-                <input class="form-control me-2"
+            <form class="d-flex" onsubmit="return false;">
+                <input id="searchInput" class="form-control me-2"
                     type="search"
-                    placeholder="Search Products">
+                    placeholder="Search Products"
+                    onkeyup="searchProducts()">
 
-                <button class="btn btn-warning">
+                <button class="btn btn-warning" type="submit">
                     Search
                 </button>
             </form>
+
+            <a href="cart.html" class="btn btn-outline-warning ms-3 position-relative">
+
+                🛒 Cart
+
+                <span id="cartCount"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                    0
+
+                </span>
+
+            </a>
 
         </div>
     </div>
@@ -231,9 +245,14 @@ Find the perfect television for your entertainment.
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/samsung-q60bakl-138-cm-55-inch-qled-ultra-hd-4k-smart-tizen-tv/p/itm0af5c254844f2?pid=TVSGE3FUPKGEHS4S&lid=LSTTVSGE3FUPKGEHS4SN5B0L0&marketplace=FLIPKART&q=Samsung+QLED+55+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=83caea6a-55a9-44b8-8531-ea1d3ebac16a.TVSGE3FUPKGEHS4S.SEARCH&ppt=hp&ppn=homepage&ssid=rlryzmvs3citowlc1782887560377&qH=4c8a5215298ee7e3&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(17)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/samsung-q60bakl-138-cm-55-inch-qled-ultra-hd-4k-smart-tizen-tv/p/itm0af5c254844f2?pid=TVSGE3FUPKGEHS4S&lid=LSTTVSGE3FUPKGEHS4SN5B0L0&marketplace=FLIPKART&q=Samsung+QLED+55+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=83caea6a-55a9-44b8-8531-ea1d3ebac16a.TVSGE3FUPKGEHS4S.SEARCH&ppt=hp&ppn=homepage&ssid=rlryzmvs3citowlc1782887560377&qH=4c8a5215298ee7e3&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -277,9 +296,14 @@ Find the perfect television for your entertainment.
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/lg-ai-tv-ua7380-108-cm-43-inch-ultra-hd-4k-led-smart-webos-2025-alpha7-processor-4k-gen8-super-upscaling-expression-enhancer-new-magic-remote-compatible-search-ms-copilot-sound-pro-9-1-2-ch-shield-chromecast-built-in/p/itmcf42bbf22b49b?pid=TVSHKRFVNYVJ6YHQ&lid=LSTTVSHKRFVNYVJ6YHQQLUUNN&marketplace=FLIPKART&q=LG+WebOS+43&store=ckf/czl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=59e1b8f9-86c3-4340-a2fd-638a581e3e4f.TVSHKRFVNYVJ6YHQ.SEARCH&ppt=sp&ppn=sp&ssid=rhm9vg6r2huk0we81782887634107&qH=821addf21b902d7a&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(18)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/lg-ai-tv-ua7380-108-cm-43-inch-ultra-hd-4k-led-smart-webos-2025-alpha7-processor-4k-gen8-super-upscaling-expression-enhancer-new-magic-remote-compatible-search-ms-copilot-sound-pro-9-1-2-ch-shield-chromecast-built-in/p/itmcf42bbf22b49b?pid=TVSHKRFVNYVJ6YHQ&lid=LSTTVSHKRFVNYVJ6YHQQLUUNN&marketplace=FLIPKART&q=LG+WebOS+43&store=ckf/czl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=59e1b8f9-86c3-4340-a2fd-638a581e3e4f.TVSHKRFVNYVJ6YHQ.SEARCH&ppt=sp&ppn=sp&ssid=rhm9vg6r2huk0we81782887634107&qH=821addf21b902d7a&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -323,9 +347,14 @@ Find the perfect television for your entertainment.
                 ★★★★☆
             </div>
 
-            <a href="https://dl.flipkart.com/dl/panasonic-139-cm-55-inch-ultra-hd-4k-led-smart-google-tv/p/itmc10f8d5fae0b6?pid=TVSGZCADWVVSUHBH&lid=LSTTVSGZCADWVVSUHBH8FTNOI&marketplace=FLIPKART&q=+Panasonic+55+&store=ckf/czl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=bb77eb23-cfa7-4409-8c7a-553456be234f.TVSGZCADWVVSUHBH.SEARCH&ppt=sp&ppn=sp&ssid=cxqi0ajbr0fo26801782888108806&qH=8e6e87737630a2ee&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(19)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/panasonic-139-cm-55-inch-ultra-hd-4k-led-smart-google-tv/p/itmc10f8d5fae0b6?pid=TVSGZCADWVVSUHBH&lid=LSTTVSGZCADWVVSUHBH8FTNOI&marketplace=FLIPKART&q=+Panasonic+55+&store=ckf/czl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=bb77eb23-cfa7-4409-8c7a-553456be234f.TVSGZCADWVVSUHBH.SEARCH&ppt=sp&ppn=sp&ssid=cxqi0ajbr0fo26801782888108806&qH=8e6e87737630a2ee&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -369,9 +398,14 @@ Find the perfect television for your entertainment.
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/xiaomi-x-series-108-cm-43-inch-ultra-hd-4k-led-smart-google-tv-dolby-vision-hdr-10-30w-audio-sound-film-maker-mode-mi/p/itmd84a8d90cae9f?pid=TVSHBPGH65KFAQYQ&lid=LSTTVSHBPGH65KFAQYQJS1XLH&marketplace=FLIPKART&q=Xiaomi+43+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=63da702e-657a-4f8b-9092-86fc82fed364.TVSHBPGH65KFAQYQ.SEARCH&ppt=None&ppn=None&ssid=pmm0o3cuhpfaa8lc1782888168994&qH=4b7c640372d41ba3&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(20)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/xiaomi-x-series-108-cm-43-inch-ultra-hd-4k-led-smart-google-tv-dolby-vision-hdr-10-30w-audio-sound-film-maker-mode-mi/p/itmd84a8d90cae9f?pid=TVSHBPGH65KFAQYQ&lid=LSTTVSHBPGH65KFAQYQJS1XLH&marketplace=FLIPKART&q=Xiaomi+43+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=63da702e-657a-4f8b-9092-86fc82fed364.TVSHBPGH65KFAQYQ.SEARCH&ppt=None&ppn=None&ssid=pmm0o3cuhpfaa8lc1782888168994&qH=4b7c640372d41ba3&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -414,9 +448,14 @@ Find the perfect television for your entertainment.
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/sony-premium-bravia-138-8-cm-55-inch-ultra-hd-4k-led-smart-google-tv/p/itmded5c6316427f?pid=TVSGQ9NNHQ7RHMGG&lid=LSTTVSGQ9NNHQ7RHMGGJM4DFU&marketplace=FLIPKART&q=Sony+Bravia+55++&store=ckf/czl&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=7e33f81b-4fed-47a1-b5bf-354a4ff999dd.TVSGQ9NNHQ7RHMGG.SEARCH&ppt=sp&ppn=sp&ssid=64bxvgqesc8tdvy81782888209113&qH=690cda3fd5670b3b&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(21)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/sony-premium-bravia-138-8-cm-55-inch-ultra-hd-4k-led-smart-google-tv/p/itmded5c6316427f?pid=TVSGQ9NNHQ7RHMGG&lid=LSTTVSGQ9NNHQ7RHMGGJM4DFU&marketplace=FLIPKART&q=Sony+Bravia+55++&store=ckf/czl&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=7e33f81b-4fed-47a1-b5bf-354a4ff999dd.TVSGQ9NNHQ7RHMGG.SEARCH&ppt=sp&ppn=sp&ssid=64bxvgqesc8tdvy81782888209113&qH=690cda3fd5670b3b&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -460,9 +499,14 @@ Find the perfect television for your entertainment.
                 ★★★★☆
             </div>
 
-            <a href="https://dl.flipkart.com/dl/tcl-126-cm-50-inch-ultra-hd-4k-led-smart-google-tv-memc-dolby-vision-atmos-hva-panel-metallic-bezel-less/p/itm61ad86f322387?pid=TVSHAHCUA5AE8RZV&lid=LSTTVSHAHCUA5AE8RZVIPXVYR&marketplace=FLIPKART&q=TCL+50+4K+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=e23b9b20-8244-4da5-a6a1-a6dda0084aec.TVSHAHCUA5AE8RZV.SEARCH&ppt=sp&ppn=sp&ssid=1z1z3vnzkly65szk1782888300932&qH=3c4ad40c9b62ad7d&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(22)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/tcl-126-cm-50-inch-ultra-hd-4k-led-smart-google-tv-memc-dolby-vision-atmos-hva-panel-metallic-bezel-less/p/itm61ad86f322387?pid=TVSHAHCUA5AE8RZV&lid=LSTTVSHAHCUA5AE8RZVIPXVYR&marketplace=FLIPKART&q=TCL+50+4K+&store=ckf/czl&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=e23b9b20-8244-4da5-a6a1-a6dda0084aec.TVSHAHCUA5AE8RZV.SEARCH&ppt=sp&ppn=sp&ssid=1z1z3vnzkly65szk1782888300932&qH=3c4ad40c9b62ad7d&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -506,9 +550,14 @@ Find the perfect television for your entertainment.
                 ★★★★★
             </div>
 
-            <a href="https://dl.flipkart.com/dl/realme-techlife-139-cm-55-inch-qled-ultra-hd-4k-smart-google-tv/p/itmfa7830876d66e?pid=TVSHD842KYW2DR9S&lid=LSTTVSHD842KYW2DR9S6BWDAP&marketplace=FLIPKART&q=OnePlus+Y1S+Pro+tv&store=ckf/czl&srno=s_1_12&otracker=search&otracker1=search&fm=Search&iid=en_LbyQeXmurbQvYIvD0-wcWj09BjZIYeGm0_wpcCw9WOiy___ynhJVqMy8BtWW-fRndwHaYcWSBWwXacdWLy-rXtS99iBZIshgpeNpQlRsx4IOdWGMcrVMHxYeJ_UZs1W4&ppt=sp&ppn=sp&ssid=xm9q52ymzfm3vda81782888392489&qH=25563d74ba80a707&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(23)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/realme-techlife-139-cm-55-inch-qled-ultra-hd-4k-smart-google-tv/p/itmfa7830876d66e?pid=TVSHD842KYW2DR9S&lid=LSTTVSHD842KYW2DR9S6BWDAP&marketplace=FLIPKART&q=OnePlus+Y1S+Pro+tv&store=ckf/czl&srno=s_1_12&otracker=search&otracker1=search&fm=Search&iid=en_LbyQeXmurbQvYIvD0-wcWj09BjZIYeGm0_wpcCw9WOiy___ynhJVqMy8BtWW-fRndwHaYcWSBWwXacdWLy-rXtS99iBZIshgpeNpQlRsx4IOdWGMcrVMHxYeJ_UZs1W4&ppt=sp&ppn=sp&ssid=xm9q52ymzfm3vda81782888392489&qH=25563d74ba80a707&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -552,9 +601,14 @@ Find the perfect television for your entertainment.
                 ★★★★☆
             </div>
 
-            <a href="https://dl.flipkart.com/dl/acer-v-pro-series-127-cm-50-inch-qled-ultra-hd-4k-smart-google-tv/p/itmfca136b6f9b2d?pid=TVSHA6BXAYHA6Q5V&lid=LSTTVSHA6BXAYHA6Q5VVJMRBD&marketplace=FLIPKART&q=Acer+V+Series+&store=ckf/czl&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=fccf3853-53ad-4c10-8115-149eabe8b1f1.TVSHA6BXAYHA6Q5V.SEARCH&ppt=sp&ppn=sp&ssid=bu3s1mljyhlh1tds1782888658369&qH=b6c7b5f125101854&ov_redirect=true&_refId=&_appId=CL" class="btn btn-primary w-100">
-                Buy Now
-            </a>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-warning" onclick="addToCart(24)">
+                    🛒 Add to Cart
+                </button>
+                <a href="https://dl.flipkart.com/dl/acer-v-pro-series-127-cm-50-inch-qled-ultra-hd-4k-smart-google-tv/p/itmfca136b6f9b2d?pid=TVSHA6BXAYHA6Q5V&lid=LSTTVSHA6BXAYHA6Q5VVJMRBD&marketplace=FLIPKART&q=Acer+V+Series+&store=ckf/czl&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=fccf3853-53ad-4c10-8115-149eabe8b1f1.TVSHA6BXAYHA6Q5V.SEARCH&ppt=sp&ppn=sp&ssid=bu3s1mljyhlh1tds1782888658369&qH=b6c7b5f125101854&ov_redirect=true&_refId=&_appId=CL" target="_blank" class="btn btn-primary">
+                    Buy Now
+                </a>
+            </div>
 
         </div>
 
@@ -898,6 +952,7 @@ behavior:"smooth"
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="products.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
