@@ -130,21 +130,27 @@ No additional installation or backend setup is required.
 
 - 🏠 Home Page
   ![Home Page](Screenshots/home.png)
+
   
 - 📱 Mobiles Page
   ![Mobiles Page](Screenshots/mobiles.png)
+
   
 - 💻 Laptops Page
   ![Laptops Page](Screenshots/laptops.png)
+
   
 - 📺 Smart TVs Page
   ![Smart TVs Page](Screenshots/tvs.png)
+
   
 - 🛒 Shopping Cart
   ![Cart Page](Screenshots/cart.png)
+
  
 - 🛠️ Support Page
   ![Support Page](Screenshots/support.png)
+
   
 - 📞 Contact Page
   ![Contact Page](Screenshots/contact.png)
